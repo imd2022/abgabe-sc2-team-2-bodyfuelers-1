@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept suchen</title>
+    <link rel="stylesheet" href="./css/searchRecipes.css" />
+  </head>
+
+  <body>
+    <nav>Hallo, ich bin der Placeholder für Darias NavBar</nav>
+    <main>
+      <div class="sticky">
+        <h1 id="newRecipesHeadline" class="tabcontent">
+          Lasse dich von tollen neuen Rezepten inspirieren!
+        </h1>
+        <h1 id="savedRecipesHeadline" class="tabcontent" style="display: none">
+          Hier findest du all deine gespeicherten Rezepte!
+        </h1>
+        <h1 id="ownRecipesHeadline" class="tabcontent" style="display: none">
+          Make it healthier!
+        </h1>
+
+        <div class="tab">
+          <button class="tablinks" onclick="tabElement(event, 'newRecipes')">
+            neue Rezepte
+          </button>
+          <button class="tablinks" onclick="tabElement(event, 'savedRecipes')">
+            gespeicherte Rezepte
+          </button>
+          <button class="tablinks" onclick="tabElement(event, 'ownRecipes')">
+            eigene Rezepte
+          </button>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="z.B. Salat mit Tomaten" />
+          <button class="iconbutton">B</button>
+          <div class="chip">
+            <p>glutenfrei</p>
+            <span
+              class="closebtn"
+              onclick="this.parentElement.style.display='none'"
+              ><img src="/icons/org/org-close.svg" />
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="newRecipes" class="tabcontent">
+        <button class="previous">Vor</button>
+
+        <div class="recipes-overview-container">
+          <div id="recipeOfTheWeek" class="recipes-categories">
+            <h2>Rezept der Woche</h2>
+          </div>
+
+          <div id="mainCourses" class="recipes-categories">
+            <h2>Hauptspeisen</h2>
+          </div>
+
+          <div id="desserts" class="recipes-categories">
+            <h2>Desserts</h2>
+          </div>
+          <!-- <div class="recipes-categories">
+            <h2>Desserts</h2>
+            <div class="card-item">
+              <img
+                src="./imagesRecipes/zitronen_basilikum_pasta.jpg"
+                alt="Tagliatelle mit Zitronen-Basilikum-Sauce"
+              />
+              <div class="card-content">
+                <p class="card-title">
+                  Tagliatelle mit Zitronen-Basilikum-Sauce
+                </p>
+                <p class="card-subtitle">Hauptmahlzeit</p>
+                <div class="healthIndicator"></div>
+                <div class="card-tags">
+                  <span>einfach</span>
+                  <span>10min</span>
+                  <span>~5,50€</span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- 
+          <div class="recipes-categories">
+            <h2>Hauptspeisen</h2>
+            <div class="card-item">
+              <img
+                src="./imagesRecipes/zitronen_basilikum_pasta.jpg"
+                alt="Tagliatelle mit Zitronen-Basilikum-Sauce"
+              />
+              <div class="card-content">
+                <p class="card-title">
+                  Tagliatelle mit Zitronen-Basilikum-Sauce
+                </p>
+                <p class="card-subtitle">Hauptmahlzeit</p>
+                <div class="healthIndicator"></div>
+                <div class="card-tags">
+                  <span>einfach</span>
+                  <span>10min</span>
+                  <span>~5,50€</span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <button class="next">Zur</button>
+      </div>
+
+      <div id="savedRecipes" class="tabcontent"></div>
+
+      <div id="ownRecipes" class="tabcontent"></div>
+    </main>
+
+    <script src="./js/searchRecipes.js"></script>
+  </body>
+</html>

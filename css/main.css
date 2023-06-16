@@ -1,0 +1,13 @@
+/* colors */
+/* font family */
+@font-face {
+  font-family: "Nunito";
+  src: url(../fonts/Nunito/Nunito-VariableFont_wght.ttf) format("truetype");
+}
+* {
+  font-family: "Nunito";
+}
+
+/* font-sizes */
+
+/*# sourceMappingURL=main.css.map */

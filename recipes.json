@@ -1,0 +1,98 @@
+{
+  "recipesOfTheWeek": [
+    {
+      "id": 0,
+      "title": "Tagliatelle mit Zitronen-Basilikum-Sauce",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~5,50€",
+      "healthIndicator": "#fbc707",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Döner",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~15,50€",
+      "healthIndicator": "#f47216",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Burger",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~25,50€",
+      "healthIndicator": "#ef3120",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta.jpg"
+    }
+  ],
+  "desserts": [
+    {
+      "id": 0,
+      "title": "Tagliatelle mit Zitronen-Basilikum-Sauce",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~5,50€",
+      "healthIndicator": "#fbc707",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Döner",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~15,50€",
+      "healthIndicator": "#f47216",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Burger",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~25,50€",
+      "healthIndicator": "#ef3120",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta.jpg"
+    }
+  ],
+  "mainCourses": [
+    {
+      "id": 0,
+      "title": "Tagliatelle mit Zitronen-Basilikum-Sauce",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~5,50€",
+      "healthIndicator": "#fbc707",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Döner",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~15,50€",
+      "healthIndicator": "#f47216",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Burger",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~25,50€",
+      "healthIndicator": "#ef3120",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta.jpg"
+    }
+  ]
+}
