@@ -93,6 +93,10 @@ h1 {
 
 /* icon button styling */
 .iconbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
   margin: 0 8px;
   padding: 0;
   height: 48px;
@@ -100,8 +104,6 @@ h1 {
   border-radius: 24px;
   border: none;
   outline: none;
-  background: transparent url(../icons/org/org-search-filters.svg) no-repeat
-    center;
   cursor: pointer;
 }
 

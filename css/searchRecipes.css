@@ -71,6 +71,10 @@ h1 {
 
 /* icon button styling */
 .iconbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
   margin: 0 8px;
   padding: 0;
   height: 48px;
@@ -78,7 +82,6 @@ h1 {
   border-radius: 24px;
   border: none;
   outline: none;
-  background: transparent url(../icons/org/org-search-filters.svg) no-repeat center;
   cursor: pointer;
 }
 
@@ -161,6 +164,18 @@ main {
   background-color: #d7d5ee;
 }
 
+.container-wraper {
+  max-width: 940px;
+}
+
+.arrow-Button {
+  position: sticky;
+  top: 300px;
+}
+.arrow-Button .rotate {
+  rotate: 180deg;
+}
+
 #newRecipes {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -176,14 +191,13 @@ main {
 }
 @media only screen and (max-width: 1230px) {
   .sticky {
-    height: 400px;
+    height: 350px;
   }
 }
 
 .recipes-overview-container {
   display: flex;
   gap: 20px;
-  max-width: 940px;
 }
 .recipes-overview-container .recipes-categories {
   flex-grow: 1;
@@ -194,12 +208,12 @@ main {
   position: sticky;
   top: 300px;
   margin-top: 0;
-  padding-bottom: 16px;
+  padding: 8px;
   z-index: 10;
 }
 @media only screen and (max-width: 1230px) {
   .recipes-overview-container .recipes-categories h2 {
-    top: 400px;
+    top: 350px;
   }
 }
 .recipes-overview-container .recipes-categories .card-item {

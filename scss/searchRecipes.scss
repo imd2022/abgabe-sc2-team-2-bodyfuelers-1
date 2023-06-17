@@ -75,6 +75,19 @@ main {
   }
 }
 
+.container-wraper {
+  max-width: 940px;
+}
+
+.arrow-Button {
+  position: sticky;
+  top: 300px;
+
+  .rotate {
+    rotate: 180deg;
+  }
+}
+
 #newRecipes {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -89,14 +102,13 @@ main {
   z-index: 10;
 
   @media only screen and (max-width: 1230px) {
-    height: 400px;
+    height: 350px;
   }
 }
 
 .recipes-overview-container {
   display: flex;
   gap: 20px;
-  max-width: 940px;
 
   .recipes-categories {
     flex-grow: 1;
@@ -107,11 +119,11 @@ main {
       position: sticky;
       top: 300px;
       margin-top: 0;
-      padding-bottom: 16px;
+      padding: 8px;
       z-index: 10;
 
       @media only screen and (max-width: 1230px) {
-        top: 400px;
+        top: 350px;
       }
     }
 

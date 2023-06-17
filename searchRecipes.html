@@ -39,13 +39,14 @@
               <input type="search" placeholder="z.B. Salat mit Tomaten" />
               <button type="submit"></button>
             </form>
-            <button class="iconbutton"></button>
+            <button class="iconbutton">
+              <img src="./icons/org/org-search-filters.svg" alt="filter" />
+            </button>
           </div>
 
           <div class="chipinline">
             <div class="chip">
               glutenfrei
-
               <span
                 class="closebutton"
                 onclick="this.parentElement.style.display='none'"
@@ -75,7 +76,9 @@
       </div>
 
       <div id="newRecipes" class="tabcontent container-wraper">
-        <button class="previous">Vor</button>
+        <button class="arrow-Button iconbutton">
+          <img src="/icons/org/org-arrow-without-line.svg" alt="arrowLeft" />
+        </button>
 
         <div class="recipes-overview-container">
           <div id="recipeOfTheWeek" class="recipes-categories">
@@ -90,7 +93,13 @@
             <h2>Desserts</h2>
           </div>
         </div>
-        <button class="next">Zur</button>
+        <button class="arrow-Button iconbutton">
+          <img
+            class="rotate"
+            src="/icons/org/org-arrow-without-line.svg"
+            alt="arrowLeft"
+          />
+        </button>
       </div>
 
       <div id="savedRecipes" class="tabcontent"></div>
