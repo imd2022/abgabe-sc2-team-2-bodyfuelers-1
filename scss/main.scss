@@ -26,3 +26,54 @@ $E-textfields: #f4f3f3;
 }
 
 /* font-sizes */
+
+.searchbar {
+  color: $B-textdark;
+  display: flex;
+  height: 56px;
+  width: 270px;
+  padding: 2px 2px 2px 16px;
+  border: none;
+  border-radius: 28px;
+  margin: 0 0 30px;
+  background-color: $E-textfields;
+
+  input[type="search"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0;
+    //padding: 7px 8px;
+    font-size: 16px;
+    color: inherit;
+    border-radius: inherit;
+  }
+
+  input[type="search"]::placeholder {
+    color: $B-textdark;
+    opacity: 70%;
+  }
+
+  button[type="submit"] {
+    //text-indent: -999px;
+    overflow: hidden;
+    height: 42px;
+    width: 42px;
+    padding: 0;
+    margin: 5px;
+    border: none;
+    border-radius: inherit;
+    background: transparent url(../icons/org/org-search.svg) no-repeat center;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    border-radius: 26px;
+    background-color: #e7e5ff;
+  }
+}
+
+.searchbar:hover {
+  content: "";
+  background-color: #f2f1ff;
+}

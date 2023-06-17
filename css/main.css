@@ -9,5 +9,49 @@
 }
 
 /* font-sizes */
+.searchbar {
+  color: #272626;
+  display: flex;
+  height: 56px;
+  width: 270px;
+  padding: 2px 2px 2px 16px;
+  border: none;
+  border-radius: 28px;
+  margin: 0 0 30px;
+  background-color: #f4f3f3;
+}
+.searchbar input[type=search] {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin: 0;
+  font-size: 16px;
+  color: inherit;
+  border-radius: inherit;
+}
+.searchbar input[type=search]::placeholder {
+  color: #272626;
+  opacity: 70%;
+}
+.searchbar button[type=submit] {
+  overflow: hidden;
+  height: 42px;
+  width: 42px;
+  padding: 0;
+  margin: 5px;
+  border: none;
+  border-radius: inherit;
+  background: transparent url(../icons/org/org-search.svg) no-repeat center;
+  cursor: pointer;
+}
+.searchbar button[type=submit]:hover {
+  border-radius: 26px;
+  background-color: #e7e5ff;
+}
+
+.searchbar:hover {
+  content: "";
+  background-color: #f2f1ff;
+}
 
 /*# sourceMappingURL=main.css.map */
