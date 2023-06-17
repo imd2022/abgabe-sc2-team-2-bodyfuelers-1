@@ -26,7 +26,16 @@ $E-textfields: #f4f3f3;
 }
 
 /* font-sizes */
+h1 {
+  font-size: 40px;
+}
 
+/* seachbar styling */
+.searchandfilter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
 .searchbar {
   color: $B-textdark;
   display: flex;
@@ -35,7 +44,7 @@ $E-textfields: #f4f3f3;
   padding: 2px 2px 2px 16px;
   border: none;
   border-radius: 28px;
-  margin: 0 0 30px;
+  margin: 0;
   background-color: $E-textfields;
 
   input[type="search"] {
@@ -43,7 +52,6 @@ $E-textfields: #f4f3f3;
     outline: none;
     background: transparent;
     margin: 0;
-    //padding: 7px 8px;
     font-size: 16px;
     color: inherit;
     border-radius: inherit;
@@ -54,8 +62,14 @@ $E-textfields: #f4f3f3;
     opacity: 70%;
   }
 
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+
   button[type="submit"] {
-    //text-indent: -999px;
     overflow: hidden;
     height: 42px;
     width: 42px;
@@ -76,4 +90,22 @@ $E-textfields: #f4f3f3;
 .searchbar:hover {
   content: "";
   background-color: #f2f1ff;
+}
+
+/* icon button styling */
+.iconbutton {
+  margin: 0 8px;
+  padding: 0;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  background: transparent url(../icons/org/org-search-filters.svg) no-repeat
+    center;
+  cursor: pointer;
+}
+
+.iconbutton:hover {
+  background-color: #e7e5ff;
 }
