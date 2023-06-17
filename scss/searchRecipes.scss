@@ -30,10 +30,16 @@ main {
   background-color: transparent;
   font-size: 20px;
   margin-bottom: 32px;
+}
 
-  .active {
-    font-weight: bold;
-  }
+.active {
+  font-weight: bold;
+}
+
+.tablinks:hover {
+  transition: all 150ms ease-in-out;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .searchandfilter {
@@ -162,7 +168,6 @@ main {
 
         .card-tags {
           font-size: 14px;
-
           display: flex;
           justify-content: space-between;
         }
@@ -170,8 +175,10 @@ main {
     }
 
     .card-item:hover {
+      transition: all 375ms ease-in-out;
       background-color: $C-lightgrey;
       transform: scale(1.02);
+      cursor: pointer;
     }
   }
 }

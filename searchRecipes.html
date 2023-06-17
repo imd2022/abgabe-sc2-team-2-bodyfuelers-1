@@ -22,7 +22,10 @@
         </h1>
 
         <div class="tab">
-          <button class="tablinks" onclick="tabElement(event, 'newRecipes')">
+          <button
+            class="tablinks active"
+            onclick="tabElement(event, 'newRecipes')"
+          >
             neue Rezepte
           </button>
           <button class="tablinks" onclick="tabElement(event, 'savedRecipes')">
@@ -35,7 +38,7 @@
 
         <div class="search">
           <div class="searchandfilter">
-            <form class="searchbar">
+            <form onsubmit="handleSearchSubmit(event)" class="searchbar">
               <input type="search" placeholder="z.B. Salat mit Tomaten" />
               <button type="submit"></button>
             </form>
@@ -93,6 +96,7 @@
             <h2>Desserts</h2>
           </div>
         </div>
+
         <button class="arrow-Button iconbutton">
           <img
             class="rotate"

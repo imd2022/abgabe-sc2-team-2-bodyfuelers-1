@@ -125,8 +125,15 @@ main {
   font-size: 20px;
   margin-bottom: 32px;
 }
-.tablinks .active {
+
+.active {
   font-weight: bold;
+}
+
+.tablinks:hover {
+  transition: all 150ms ease-in-out;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .searchandfilter {
@@ -251,8 +258,10 @@ main {
   justify-content: space-between;
 }
 .recipes-overview-container .recipes-categories .card-item:hover {
+  transition: all 375ms ease-in-out;
   background-color: #f3efe9;
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=searchRecipes.css.map */
