@@ -87,3 +87,13 @@ function handleSearchSubmit(event) {
   const searchTerm = event.target[0].value; //this form has two targets (input + button), we want to get the value from the input (target[0])
   window.location = "/searchingPage.html?searchTerm=" + searchTerm; //when triggering the event, the window location changes to the new Page with the value of the form
 }
+
+document.getElementById("buddy").addEventListener("mouseout", mouseOut);
+
+function mouseOut() {
+  document.getElementById("buddysMessage").style.visibility = "hidden";
+}
+
+function buddysMessage(buddysMessage) {
+  document.getElementById(buddysMessage).style.visibility = "visible";
+}

@@ -10,6 +10,21 @@
   <body>
     <nav>Hallo, ich bin der Placeholder für Darias NavBar</nav>
     <main>
+      <div class="buddy-container">
+        <img
+          onmouseover="buddysMessage('buddysMessage')"
+          id="buddy"
+          src="./icons/our-buddy.svg"
+          alt="Buddy"
+        />
+        <div id="buddysMessage">
+          <p class="messagetext">
+            Ich empfehle dir für nächste Woche die Tagliatelle mit
+            Zitronen-Basilikum-Sauce einzuplanen. Das Rezept hat super
+            Bewertungen!
+          </p>
+        </div>
+      </div>
       <div class="sticky">
         <h1 id="newRecipesHeadline" class="tabcontent">
           Lasse dich von tollen neuen Rezepten inspirieren!
@@ -27,12 +42,15 @@
             onclick="tabElement(event, 'newRecipes')"
           >
             neue Rezepte
+            <div id="newRecipe"></div>
           </button>
           <button class="tablinks" onclick="tabElement(event, 'savedRecipes')">
             gespeicherte Rezepte
+            <div id="savedRecipe"></div>
           </button>
           <button class="tablinks" onclick="tabElement(event, 'ownRecipes')">
             eigene Rezepte
+            <div id="ownRecipe"></div>
           </button>
         </div>
 
@@ -42,7 +60,10 @@
               <input type="search" placeholder="z.B. Salat mit Tomaten" />
               <button type="submit"></button>
             </form>
-            <button class="iconbutton">
+            <button
+              onclick="window.location.href='searchingPage.html?searchTerm=';"
+              class="iconbutton"
+            >
               <img src="./icons/org/org-search-filters.svg" alt="filter" />
             </button>
           </div>
