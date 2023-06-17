@@ -6,20 +6,18 @@
 }
 * {
   font-family: "Nunito";
+  color: #272626;
 }
 
 /* font-sizes */
 h1 {
+  margin: 0 0 24px 0;
+  padding-top: 24px;
   font-size: 40px;
+  margin-bottom: 24px;
 }
 
 /* seachbar styling */
-.searchandfilter {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
 .searchbar {
   color: #272626;
   display: flex;
