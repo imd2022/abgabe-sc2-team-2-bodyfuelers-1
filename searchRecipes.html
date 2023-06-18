@@ -10,6 +10,21 @@
   <body>
     <nav>Hallo, ich bin der Placeholder für Darias NavBar</nav>
     <main>
+      <div class="buddy-container">
+        <img
+          onmouseover="buddysMessage('buddysMessage')"
+          id="buddy"
+          src="./icons/our-buddy.svg"
+          alt="Buddy"
+        />
+        <div id="buddysMessage">
+          <p class="messagetext">
+            Ich empfehle dir für nächste Woche die Tagliatelle mit
+            Zitronen-Basilikum-Sauce einzuplanen. Das Rezept hat super
+            Bewertungen!
+          </p>
+        </div>
+      </div>
       <div class="sticky">
         <h1 id="newRecipesHeadline" class="tabcontent">
           Lasse dich von tollen neuen Rezepten inspirieren!
@@ -22,33 +37,72 @@
         </h1>
 
         <div class="tab">
-          <button class="tablinks" onclick="tabElement(event, 'newRecipes')">
+          <button
+            class="tablinks active"
+            onclick="tabElement(event, 'newRecipes')"
+          >
             neue Rezepte
+            <div id="newRecipe"></div>
           </button>
           <button class="tablinks" onclick="tabElement(event, 'savedRecipes')">
             gespeicherte Rezepte
+            <div id="savedRecipe"></div>
           </button>
           <button class="tablinks" onclick="tabElement(event, 'ownRecipes')">
             eigene Rezepte
+            <div id="ownRecipe"></div>
           </button>
         </div>
 
         <div class="search">
-          <input type="text" placeholder="z.B. Salat mit Tomaten" />
-          <button class="iconbutton">B</button>
-          <div class="chip">
-            <p>glutenfrei</p>
-            <span
-              class="closebtn"
-              onclick="this.parentElement.style.display='none'"
-              ><img src="/icons/org/org-close.svg" />
-            </span>
+          <div class="searchandfilter">
+            <form onsubmit="handleSearchSubmit(event)" class="searchbar">
+              <input type="search" placeholder="z.B. Salat mit Tomaten" />
+              <button type="submit"></button>
+            </form>
+            <button
+              onclick="window.location.href='searchingPage.html?searchTerm=';"
+              class="iconbutton"
+            >
+              <img src="./icons/org/org-search-filters.svg" alt="filter" />
+            </button>
+          </div>
+
+          <div class="chipinline">
+            <div class="chip">
+              glutenfrei
+              <span
+                class="closebutton"
+                onclick="this.parentElement.style.display='none'"
+                ><img src="/icons/org/org-close.svg" alt="closeButton" />
+              </span>
+            </div>
+
+            <div class="chip">
+              Mittagessen
+              <span
+                class="closebutton"
+                onclick="this.parentElement.style.display='none'"
+                ><img src="/icons/org/org-close.svg" alt="closeButton" />
+              </span>
+            </div>
+
+            <div class="chip">
+              10-16min
+              <span
+                class="closebutton"
+                onclick="this.parentElement.style.display='none'"
+                ><img src="/icons/org/org-close.svg" alt="closeButton" />
+              </span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="newRecipes" class="tabcontent">
-        <button class="previous">Vor</button>
+      <div id="newRecipes" class="tabcontent container-wraper">
+        <button class="arrow-Button iconbutton">
+          <img src="/icons/org/org-arrow-without-line.svg" alt="arrowLeft" />
+        </button>
 
         <div class="recipes-overview-container">
           <div id="recipeOfTheWeek" class="recipes-categories">
@@ -62,51 +116,15 @@
           <div id="desserts" class="recipes-categories">
             <h2>Desserts</h2>
           </div>
-          <!-- <div class="recipes-categories">
-            <h2>Desserts</h2>
-            <div class="card-item">
-              <img
-                src="./imagesRecipes/zitronen_basilikum_pasta.jpg"
-                alt="Tagliatelle mit Zitronen-Basilikum-Sauce"
-              />
-              <div class="card-content">
-                <p class="card-title">
-                  Tagliatelle mit Zitronen-Basilikum-Sauce
-                </p>
-                <p class="card-subtitle">Hauptmahlzeit</p>
-                <div class="healthIndicator"></div>
-                <div class="card-tags">
-                  <span>einfach</span>
-                  <span>10min</span>
-                  <span>~5,50€</span>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- 
-          <div class="recipes-categories">
-            <h2>Hauptspeisen</h2>
-            <div class="card-item">
-              <img
-                src="./imagesRecipes/zitronen_basilikum_pasta.jpg"
-                alt="Tagliatelle mit Zitronen-Basilikum-Sauce"
-              />
-              <div class="card-content">
-                <p class="card-title">
-                  Tagliatelle mit Zitronen-Basilikum-Sauce
-                </p>
-                <p class="card-subtitle">Hauptmahlzeit</p>
-                <div class="healthIndicator"></div>
-                <div class="card-tags">
-                  <span>einfach</span>
-                  <span>10min</span>
-                  <span>~5,50€</span>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
-        <button class="next">Zur</button>
+
+        <button class="arrow-Button iconbutton">
+          <img
+            class="rotate"
+            src="/icons/org/org-arrow-without-line.svg"
+            alt="arrowLeft"
+          />
+        </button>
       </div>
 
       <div id="savedRecipes" class="tabcontent"></div>
