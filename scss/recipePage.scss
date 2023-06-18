@@ -1,0 +1,168 @@
+@import "main";
+
+* {
+  box-sizing: border-box;
+}
+nav {
+  height: 100%;
+  width: 250px;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: $C-grayblue; /* Black*/
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 900px) {
+    width: 100px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: $A-background;
+}
+
+main {
+  max-width: 1190px;
+  margin-left: 250px;
+  padding: 0 25px;
+  background-color: $A-background;
+
+  @media only screen and (max-width: 900px) {
+    margin-left: 100px;
+  }
+}
+
+.buddy-container {
+  #buddy {
+    z-index: 21;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+
+    @media only screen and (max-width: 1350px) {
+      position: fixed;
+
+      bottom: -70px;
+    }
+  }
+
+  #buddy:hover {
+    transition: all 150ms ease-in-out;
+    transform: scale(1.06);
+    cursor: pointer;
+
+    @media only screen and (max-width: 1350px) {
+      transition: all 150ms ease-in-out;
+      position: fixed;
+      right: 50px;
+      bottom: 20px;
+    }
+  }
+
+  #buddysMessage {
+    visibility: hidden;
+    z-index: 21;
+    position: fixed;
+    right: 50px;
+    bottom: 160px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    background-color: $D-smallinteraction;
+    padding: 0 16px;
+    //box-shadow: 0px 5px 10px $D-smallinteraction;
+
+    .messagetext {
+      color: $A-background;
+    }
+  }
+
+  #buddysMessage::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 45px;
+    width: 0;
+    border-top: 20px solid $D-smallinteraction;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+}
+
+.headerImage {
+  margin-left: 250px;
+  height: 300px;
+  width: 100%;
+  max-width: 1190px;
+  object-fit: cover;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 125px;
+  background-color: $A-background;
+  z-index: 10;
+
+  .lines {
+    display: flex;
+    justify-content: space-between;
+
+    .back-button {
+      margin: 0;
+    }
+
+    .recipeName {
+      padding: 0;
+      margin-right: 16px;
+    }
+  }
+}
+
+.information {
+  .stars-container {
+    display: flex;
+    align-items: center;
+
+    .rating-stars {
+      margin-right: 8px;
+    }
+  }
+}
+
+.chipinline {
+  display: flex;
+  align-items: center;
+
+  .chip {
+    margin-right: 8px;
+    display: flex;
+    height: 32px;
+    padding: 0 16px;
+    align-items: center;
+    border: 2px solid $C-darkgrey;
+    border-radius: 8px;
+  }
+}
+
+.ingredients-container {
+  .person-count-selection {
+    display: flex;
+    align-items: center;
+
+    .person-count {
+      margin: 0 8px;
+      background-color: $E-textfields;
+      height: 32px;
+      width: 50px;
+      border-radius: 8px;
+    }
+  }
+}
+
+.rating-container {
+  background-color: $C-greypurple;
+  height: 1000px;
+}

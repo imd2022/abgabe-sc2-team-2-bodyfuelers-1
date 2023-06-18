@@ -17,6 +17,10 @@ h1 {
   margin-bottom: 24px;
 }
 
+h2 {
+  font-size: 30px;
+}
+
 /* seachbar styling */
 .searchbar {
   color: #272626;
