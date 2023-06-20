@@ -204,6 +204,26 @@ main {
   display: flex;
   justify-content: space-between;
 }
+.sticky .lines .iconbutton {
+  margin: 0;
+}
+.sticky .lines .special-iconbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.sticky .lines .special-iconbutton:hover {
+  background-color: #e7e5ff;
+}
 .sticky .lines .back-button {
   margin: 0;
 }

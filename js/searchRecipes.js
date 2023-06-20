@@ -88,6 +88,7 @@ function handleSearchSubmit(event) {
   window.location = "/searchingPage.html?searchTerm=" + searchTerm; //when triggering the event, the window location changes to the new Page with the value of the form
 }
 
+/* getting a message from buddy by hovering over buddy */
 document.getElementById("buddy").addEventListener("mouseout", mouseOut);
 
 function mouseOut() {

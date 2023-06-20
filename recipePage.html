@@ -36,11 +36,24 @@
           <button class="iconbutton back-button">
             <img src="./icons/org/org-arrow-with-line.svg" alt="back button" />
           </button>
-          <button class="special-iconbutton save-button">Save</button>
+
+          <button id="saveButton" class="special-iconbutton">
+            <img
+              onclick="saveRecipe()"
+              src="./icons/org/org-save.svg"
+              alt="save button"
+            />
+          </button>
         </div>
         <div class="lines">
           <h1 class="recipeName">Tagliatelle mit Zitronen-Basilikum-Sauce</h1>
-          <button class="special-iconbutton plan">Planer</button>
+          <button class="iconbutton plan">
+            <img
+              onclick="myFunction()"
+              src="./icons/nav/nav-plan-recipes.svg"
+              alt="save button"
+            />
+          </button>
         </div>
       </div>
 
@@ -109,5 +122,7 @@
         <div class="ratings"></div>
       </div>
     </main>
+
+    <script src="./js/recipePage.js"></script>
   </body>
 </html>
