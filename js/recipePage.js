@@ -38,3 +38,7 @@ function mouseOut() {
 function buddysMessage(buddysMessage) {
   document.getElementById(buddysMessage).style.visibility = "visible";
 }
+
+function backToSearchPage() {
+  window.location.href = "/searchRecipes.html";
+}

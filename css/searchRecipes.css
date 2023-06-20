@@ -317,6 +317,7 @@ main {
   border-radius: 12px;
   padding-bottom: 16px;
   margin-bottom: 16px;
+  min-height: 250px;
 }
 .recipes-overview-container .recipes-categories .card-item img {
   border-radius: 12px 12px 0 0;
@@ -328,6 +329,7 @@ main {
   margin: 0 15px;
 }
 .recipes-overview-container .recipes-categories .card-item .card-content .card-title {
+  min-height: 44px;
   font-size: 16px;
 }
 .recipes-overview-container .recipes-categories .card-item .card-content .card-mealType {

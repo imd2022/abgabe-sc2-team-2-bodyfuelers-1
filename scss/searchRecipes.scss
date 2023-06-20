@@ -229,6 +229,7 @@ main {
       border-radius: 12px;
       padding-bottom: 16px;
       margin-bottom: 16px;
+      min-height: 250px;
 
       img {
         border-radius: 12px 12px 0 0;
@@ -241,6 +242,7 @@ main {
         margin: 0 15px;
 
         .card-title {
+          min-height: 44px;
           font-size: 16px;
         }
 

@@ -25,6 +25,8 @@ function tabElement(evt, recipeType) {
 function createRecipeCard(element) {
   const cardElement = document.createElement("div"); //creates a new "div" element ---> is parent1
   cardElement.classList.add("card-item"); //gives the previously created div a class-name
+  cardElement.id = element.id; //adds specific id to the card element
+  cardElement.onclick = goToRecipePage;
   const cardImage = document.createElement("img"); //creates a new "img" element ---> is child1 from parent1
   cardImage.src = element.image; //src = searches for a url that can be found in the "elements" of the json file under "image"
   cardElement.appendChild(cardImage); //adds "cardImage" as child1 to parent1
@@ -32,7 +34,8 @@ function createRecipeCard(element) {
   cardContent.classList.add("card-content"); //gives the previously created div a class-name
   cardElement.appendChild(cardContent); //adds "cardContent" as child to parent1 ---> becomes parent2
   const cardTitle = document.createElement("p"); //creates a new "p" element ---> is child1 from parent2
-  cardTitle.innerText = element.title; //innerText = takes over text that can be found in the "elements" of the json file under "title"
+  cardTitle.innerText = element.title;
+  cardTitle.classList.add("card-title"); //innerText = takes over text that can be found in the "elements" of the json file under "title"
   cardContent.appendChild(cardTitle); //adds "cardTitle" as child1 to parent2
   const mealType = document.createElement("p");
   mealType.innerText = element.mealType;
@@ -85,6 +88,7 @@ fetch("./recipes.json").then(function (response) {
 function handleSearchSubmit(event) {
   event.preventDefault(); //all settings are reset
   const searchTerm = event.target[0].value; //this form has two targets (input + button), we want to get the value from the input (target[0])
+  console.log(searchTerm);
   window.location = "/searchingPage.html?searchTerm=" + searchTerm; //when triggering the event, the window location changes to the new Page with the value of the form
 }
 
@@ -97,4 +101,11 @@ function mouseOut() {
 
 function buddysMessage(buddysMessage) {
   document.getElementById(buddysMessage).style.visibility = "visible";
+}
+
+/* change page when clicking on card items */
+function goToRecipePage() {
+  window.location.href = "/recipePage.html";
+  //let cardItems = document.getElementsByClassName("card-items");
+  //console.log(saveID);
 }
