@@ -344,6 +344,7 @@ main {
 .ingredients-container .listed-ingredients {
   display: flex;
   flex-wrap: wrap;
+  max-width: 900px;
 }
 .ingredients-container .listed-ingredients .ingredient {
   height: 120px;

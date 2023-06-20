@@ -265,6 +265,7 @@ main {
   .listed-ingredients {
     display: flex;
     flex-wrap: wrap;
+    max-width: 900px;
 
     .ingredient {
       height: 120px;
