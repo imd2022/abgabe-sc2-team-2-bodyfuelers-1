@@ -246,16 +246,58 @@ main {
 }
 
 .ingredients-container {
+  h2 {
+    margin: 0;
+    padding: 32px 0 8px 0;
+  }
   .person-count-selection {
     display: flex;
     align-items: center;
 
     .person-count {
-      margin: 0 8px;
+      margin: 22px 8px 0 8px;
       background-color: $E-textfields;
-      height: 32px;
-      width: 50px;
+      height: 40px;
+      width: 70px;
       border-radius: 8px;
+    }
+  }
+  .listed-ingredients {
+    display: flex;
+    flex-wrap: wrap;
+
+    .ingredient {
+      height: 120px;
+      min-width: 120px;
+      padding: 4px;
+      margin: 0 8px 8px 0;
+      border: 2px solid $C-darkgrey;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        stroke-width: 2px;
+        height: 65px;
+        padding: 8px;
+        margin-bottom: 8px;
+      }
+
+      .ingredientContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+          font-size: 14px;
+        }
+
+        .amount {
+          font-size: 12px;
+          opacity: 70%;
+        }
+      }
     }
   }
 }

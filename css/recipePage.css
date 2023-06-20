@@ -326,16 +326,53 @@ main {
   border-radius: 8px;
 }
 
+.ingredients-container h2 {
+  margin: 0;
+  padding: 32px 0 8px 0;
+}
 .ingredients-container .person-count-selection {
   display: flex;
   align-items: center;
 }
 .ingredients-container .person-count-selection .person-count {
-  margin: 0 8px;
+  margin: 22px 8px 0 8px;
   background-color: #f4f3f3;
-  height: 32px;
-  width: 50px;
+  height: 40px;
+  width: 70px;
   border-radius: 8px;
+}
+.ingredients-container .listed-ingredients {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ingredients-container .listed-ingredients .ingredient {
+  height: 120px;
+  min-width: 120px;
+  padding: 4px;
+  margin: 0 8px 8px 0;
+  border: 2px solid #cac7c3;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ingredients-container .listed-ingredients .ingredient img {
+  stroke-width: 2px;
+  height: 65px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.ingredients-container .listed-ingredients .ingredient .ingredientContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ingredients-container .listed-ingredients .ingredient .ingredientContent .title {
+  font-size: 14px;
+}
+.ingredients-container .listed-ingredients .ingredient .ingredientContent .amount {
+  font-size: 12px;
+  opacity: 70%;
 }
 
 .preparation-container {
