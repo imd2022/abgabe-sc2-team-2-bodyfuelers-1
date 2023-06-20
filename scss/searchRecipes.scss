@@ -1,0 +1,275 @@
+@import "main";
+
+* {
+  box-sizing: border-box;
+}
+nav {
+  height: 100%;
+  width: 250px;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: $C-grayblue; /* Black*/
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 900px) {
+    width: 100px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin-left: 250px;
+  padding: 0 25px;
+  background-color: $A-background;
+
+  @media only screen and (max-width: 900px) {
+    margin-left: 100px;
+  }
+}
+.buddy-container {
+  #buddy {
+    z-index: 21;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+
+    @media only screen and (max-width: 1350px) {
+      position: fixed;
+
+      bottom: -70px;
+    }
+  }
+
+  #buddy:hover {
+    transition: all 150ms ease-in-out;
+    transform: scale(1.06);
+    cursor: pointer;
+
+    @media only screen and (max-width: 1350px) {
+      transition: all 150ms ease-in-out;
+      position: fixed;
+      right: 50px;
+      bottom: 20px;
+    }
+  }
+
+  #buddysMessage {
+    visibility: hidden;
+    z-index: 21;
+    position: fixed;
+    right: 50px;
+    bottom: 160px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    background-color: $D-smallinteraction;
+    padding: 0 16px;
+    //box-shadow: 0px 5px 10px $D-smallinteraction;
+
+    .messagetext {
+      color: $A-background;
+    }
+  }
+
+  #buddysMessage::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 45px;
+    width: 0;
+    border-top: 20px solid $D-smallinteraction;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+  }
+}
+
+.tablinks {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.active {
+  font-weight: bold;
+  position: relative;
+
+  #newRecipe {
+    background-color: $B-textdark;
+    height: 5px;
+    width: 70px;
+    border-radius: 5px;
+  }
+
+  #savedRecipe {
+    margin: auto;
+    width: 50%;
+    background-color: $B-textdark;
+    height: 5px;
+    width: 70px;
+    border-radius: 5px;
+  }
+
+  #ownRecipe {
+    position: absolute;
+    right: 6px;
+    background-color: $B-textdark;
+    height: 5px;
+    width: 70px;
+    border-radius: 5px;
+  }
+}
+
+.tablinks:hover {
+  transition: all 150ms ease-in-out;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.searchandfilter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.chipinline {
+  display: flex;
+  align-items: center;
+
+  .chip {
+    display: flex;
+    align-items: center;
+    margin: 0 8px 16px 0;
+    padding: 0 16px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: $C-greypurple;
+
+    img {
+      padding-left: 8px;
+      color: $B-textdark;
+      height: 14px;
+      width: auto;
+    }
+
+    .closebutton {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  .chip:hover {
+    transition: all 300ms ease-in-out;
+    background-color: #d7d5ee;
+  }
+}
+
+.container-wraper {
+  max-width: 940px;
+}
+
+.arrow-Button {
+  position: sticky;
+  top: 300px;
+
+  .rotate {
+    rotate: 180deg;
+  }
+}
+
+#newRecipes {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 300px;
+  background-color: $A-background;
+  z-index: 10;
+
+  @media only screen and (max-width: 1230px) {
+    height: 350px;
+  }
+}
+
+.recipes-overview-container {
+  display: flex;
+  gap: 20px;
+
+  .recipes-categories {
+    flex-grow: 1;
+
+    h2 {
+      background-color: $A-background;
+      text-align: center;
+      position: sticky;
+      top: 300px;
+      margin-top: 0;
+      padding: 8px;
+      z-index: 10;
+
+      @media only screen and (max-width: 1230px) {
+        top: 350px;
+      }
+    }
+
+    .card-item {
+      box-shadow: inset 0 0 5px $C-lightgrey;
+      border-radius: 12px;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+
+      img {
+        border-radius: 12px 12px 0 0;
+        width: 100%;
+        aspect-ratio: 16/5;
+        object-fit: cover;
+      }
+
+      .card-content {
+        margin: 0 15px;
+
+        .card-title {
+          font-size: 16px;
+        }
+
+        .card-mealType {
+          font-size: 14px;
+          opacity: 70%;
+        }
+
+        .healthIndicator {
+          width: 100%;
+          height: 16px;
+          background-color: $E-neutral;
+          border-radius: 15px;
+          margin-bottom: 12px;
+        }
+
+        .card-tags {
+          font-size: 14px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .card-item:hover {
+      transition: all 375ms ease-in-out;
+      background-color: $C-lightgrey;
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+  }
+}

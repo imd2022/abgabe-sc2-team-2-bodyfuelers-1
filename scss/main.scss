@@ -1,0 +1,112 @@
+/* colors */
+$A-background: #fffbf6;
+$B-textdark: #272626;
+$B-textlight: #fffbf6;
+$C-lightgrey: #f3efe9;
+$C-darkgrey: #cac7c3;
+$C-grayblue: #e7ebf3;
+$C-greypurple: #e7e5ff;
+$D-CTAdominat: #312d5c;
+$D-smallinteraction: #6661a3;
+$E-totallyhealthy: #0e8a4a;
+$E-healthy: #73c82c;
+$E-neutral: #fbc707;
+$E-notthathealthy: #f47216;
+$E-nothealthy: #ef3120;
+$E-textfields: #f4f3f3;
+
+/* font family */
+@font-face {
+  font-family: "Nunito";
+  src: url(../fonts/Nunito/Nunito-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+  font-family: "Nunito";
+  color: $B-textdark;
+}
+
+/* font-sizes */
+h1 {
+  margin: 0 0 24px 0;
+  padding-top: 24px;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+
+/* seachbar styling */
+.searchbar {
+  color: $B-textdark;
+  display: flex;
+  height: 56px;
+  width: 270px;
+  padding: 2px 2px 2px 16px;
+  border: none;
+  border-radius: 28px;
+  margin: 0;
+  background-color: $E-textfields;
+
+  input[type="search"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0;
+    font-size: 16px;
+    color: inherit;
+    border-radius: inherit;
+  }
+
+  input[type="search"]::placeholder {
+    color: $B-textdark;
+    opacity: 70%;
+  }
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+  }
+
+  button[type="submit"] {
+    overflow: hidden;
+    height: 42px;
+    width: 42px;
+    padding: 0;
+    margin: 5px;
+    border: none;
+    border-radius: inherit;
+    background: transparent url(../icons/org/org-search.svg) no-repeat center;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    border-radius: 26px;
+    background-color: #e7e5ff;
+  }
+}
+
+.searchbar:hover {
+  content: "";
+  background-color: #f2f1ff;
+}
+
+/* icon button styling */
+.iconbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0 8px;
+  padding: 0;
+  height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.iconbutton:hover {
+  background-color: #e7e5ff;
+}

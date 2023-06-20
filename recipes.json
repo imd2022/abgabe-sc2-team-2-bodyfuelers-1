@@ -1,0 +1,98 @@
+{
+  "recipesOfTheWeek": [
+    {
+      "id": 0,
+      "title": "Tagliatelle mit Zitronen-Basilikum-Sauce",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~5,50€",
+      "healthIndicator": "#fbc707",
+      "image": "./imagesRecipes/zitronen_basilikum_pasta-petit-appetit.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Kichererbsen-Omlette",
+      "mealType": "Frühstück",
+      "difficulty": "einfach",
+      "time": "15min",
+      "price": "~3,50€",
+      "healthIndicator": "#0E8A4A",
+      "image": "./imagesRecipes/kichererbsen-omlette-Fooby.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Gedünsteter Kabeljau auf Tomaten",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "20min",
+      "price": "~7,60€",
+      "healthIndicator": "#73C82C",
+      "image": "./imagesRecipes/geduensteter-kabeljau-EatSmarter.jpg"
+    }
+  ],
+  "mainCourses": [
+    {
+      "id": 0,
+      "title": "Kartoffel-Karotten-Pfanne",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "mittel",
+      "time": "15min",
+      "price": "~4,90€",
+      "healthIndicator": "#73C82C",
+      "image": "./imagesRecipes/kartoffel-karotten-pfanne-LIDLkochen.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Gebratene Entenbrust",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "20min",
+      "price": "~6,80€",
+      "healthIndicator": "#F47216",
+      "image": "./imagesRecipes/gebratene-entenbrust-GuteKuecheAT.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Nasi Goreng",
+      "mealType": "Hauptmahlzeit",
+      "difficulty": "einfach",
+      "time": "25min",
+      "price": "~3,50€",
+      "healthIndicator": "#FBC707",
+      "image": "./imagesRecipes/nasi-goreng-eatbetterDE.jpg"
+    }
+  ],
+  "desserts": [
+    {
+      "id": 0,
+      "title": "Wassermelonen-Pizza",
+      "mealType": "Dessert",
+      "difficulty": "einfach",
+      "time": "5min",
+      "price": "~4,50€",
+      "healthIndicator": "#0E8A4A",
+      "image": "./imagesRecipes/Wassermelonen-Pizza-springlane.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Vegane Peanut Butter Cups",
+      "mealType": "Dessert",
+      "difficulty": "einfach",
+      "time": "15min",
+      "price": "~5,10€",
+      "healthIndicator": "#EF3120",
+      "image": "./imagesRecipes/Vegane-Peanut-Butter-Cups-Iss-Happy.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Vegane Beeren-Quark-Creme",
+      "mealType": "Dessert",
+      "difficulty": "einfach",
+      "time": "10min",
+      "price": "~2,50€",
+      "healthIndicator": "#73C82C",
+      "image": "./imagesRecipes/vanille-quark-creme-mit-waldfruechten-Madame-Cuisine.jpg"
+    }
+  ]
+}
