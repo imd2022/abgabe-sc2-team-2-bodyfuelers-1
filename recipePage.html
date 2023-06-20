@@ -36,14 +36,25 @@
           <button class="iconbutton back-button">
             <img src="./icons/org/org-arrow-with-line.svg" alt="back button" />
           </button>
-
-          <button id="saveButton" class="special-iconbutton">
-            <img
+          <div class="dropdownSave">
+            <button
               onclick="saveRecipe()"
-              src="./icons/org/org-save.svg"
-              alt="save button"
-            />
-          </button>
+              id="saveButton"
+              class="special-iconbutton"
+            >
+              <img
+                onclick="saveRecipe()"
+                src="./icons/org/org-save.svg"
+                alt="save button"
+              />
+            </button>
+            <div id="saveDropdown" class="dropdown-content">
+              <div class="dropdown-header">speichern unter</div>
+              <a href="#">alle Rezepte</a>
+              <hr />
+              <a href="#">demnächst kochen</a>
+            </div>
+          </div>
         </div>
         <div class="lines">
           <h1 class="recipeName">Tagliatelle mit Zitronen-Basilikum-Sauce</h1>
@@ -111,9 +122,18 @@
       <div class="preparation-container">
         <h2>Zubereitung</h2>
         <ol>
-          <li>noiqenrfoqe</li>
-          <li>nowqergqergqergqergqerg</li>
-          <li>vregwerger</li>
+          <li>Butter mit Zitronenabrieb erhitzen und kurz köcheln lassen.</li>
+          <li>Basilikum fein hacken.</li>
+          <li>Sahne und Basilikum zur Butter hinzugeben.</li>
+          <li>Geriebenen Parmesan hinzugeben.</li>
+          <li>Kurz köcheln lassen und mit Salz und Pfeffer abschmecken.</li>
+          <li>Tagliatelle nach Packungsanleitung kochen.</li>
+          <li>Tagliatelle abgießen und mit der Sauce vermischen.</li>
+          <li>Auf niedriger Stufe kocheln lassen.</li>
+          <li>Pinienkerne in der Pfanne rösten.</li>
+          <li>
+            Tagliatelle mit Pinienkernen und etwas Parmesanabrieb servieren.
+          </li>
         </ol>
       </div>
 
