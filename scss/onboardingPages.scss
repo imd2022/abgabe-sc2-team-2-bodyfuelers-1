@@ -1,0 +1,234 @@
+@import "main";
+
+body {
+  background: $C-grayblue;
+  text-align: center;
+  color: $B-textdark;
+}
+
+.onboarding-container {
+  display: flex;
+  align-items: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  height: 77vh;
+  border-radius: 83px;
+  background: $A-background;
+  padding: 30px 40px 50px 40px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contents {
+  flex-grow: 2;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buddy {
+  margin-top: 30px;
+}
+
+.progress-stars {
+  margin-bottom: 10px;
+
+  .star-filled,
+  .star-notfilled {
+    padding: 12px;
+  }
+}
+
+.onboarding-title {
+  font-style: normal;
+  letter-spacing: 0.25px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 15px;
+}
+
+.explanation {
+  max-width: 650px;
+  margin: 25px auto 19px auto;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.buddy-screen {
+  max-width: 530px;
+}
+
+.screen-three {
+  margin-bottom: 7px;
+  margin-top: 15px;
+}
+
+.explanation {
+  p {
+    margin: 0;
+  }
+
+  :not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+.onboarding-button {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 118px;
+  text-decoration: none;
+  background: #6661a3;
+  color: #fffbf6;
+  width: 310px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  transition: all 200ms ease-in-out;
+
+  :hover {
+    background-color: #312d5c;
+  }
+}
+
+textarea {
+  display: inline-block;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  padding: 10px 25px;
+  min-width: 600px;
+  max-height: 150px;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 150%;
+  background: #f4f3f3;
+  color: rgba(39, 38, 38, 0.5);
+  border-radius: 12px;
+}
+
+// radiobuttons into buttons for multiple choice source:
+// https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead
+
+.choice {
+  input {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(39, 38, 38, 0.75);
+    border: 2px solid #cac7c3;
+    border-radius: 20px;
+  }
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0;
+
+  li {
+    float: left;
+    margin: 4px 6px;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    width: 228px;
+    height: 64px;
+  }
+
+  label,
+  input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  input[type="checkbox"] {
+    opacity: 0.01;
+    z-index: 100;
+  }
+
+  input[type="checkbox"]:checked + label,
+  .Checked + label {
+    background: #e7e5ff;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    color: #272626;
+    border: none;
+  }
+
+  label {
+    padding: 17px 10px;
+    cursor: pointer;
+    z-index: 90;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(39, 38, 38, 0.75);
+    border: 2px solid #cac7c3;
+    border-radius: 20px;
+  }
+
+  label:hover {
+    background: #ddd;
+  }
+}
+
+.favourites {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .right-arrow,
+  .left-arrow {
+    padding: 10px;
+  }
+}
+
+.right-arrow {
+  transform: rotate(180deg);
+}
+
+.favourites-contents {
+  li {
+    width: 141px;
+    height: 93px;
+  }
+
+  label {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+
+    img {
+      padding-bottom: 7px;
+    }
+  }
+
+  .plus-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
