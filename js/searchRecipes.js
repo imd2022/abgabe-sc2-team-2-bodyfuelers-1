@@ -1,4 +1,5 @@
-/* Tab bar */
+/* Tab bar 
+  ----reference: https://www.w3schools.com/howto/howto_js_tabs.asp ---- */
 function tabElement(evt, recipeType) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -104,8 +105,7 @@ function buddysMessage(buddysMessage) {
 }
 
 /* change page when clicking on card items */
-function goToRecipePage() {
-  window.location.href = "/recipePage.html";
-  //let cardItems = document.getElementsByClassName("card-items");
-  //console.log(saveID);
+function goToRecipePage(event) {
+  const currentId = event.target.closest(".card-item").id; //closest function heading toward the document root which is the CSS selector
+  window.location.href = "/recipePage.html?ID=" + currentId;
 }
