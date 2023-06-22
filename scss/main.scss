@@ -86,7 +86,7 @@ h2 {
 
   button[type="submit"]:hover {
     border-radius: 26px;
-    background-color: #e7e5ff;
+    background-color: $C-grayblue;
   }
 }
 
@@ -112,5 +112,5 @@ h2 {
 }
 
 .iconbutton:hover {
-  background-color: #e7e5ff;
+  background-color: $C-grayblue;
 }
