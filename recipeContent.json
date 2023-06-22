@@ -1,0 +1,153 @@
+{
+  "Tagliatelle": {
+    "id": "Tagliatelle",
+    "title": "Tagliatelle mit Zitronen-Basilikum-Sauce",
+    "difficulty": "einfach",
+    "time": "10min",
+    "price": "~5,50€",
+    "healthIndicator": "C",
+    "healthIndicatorColor": "#fbc707",
+    "image": "./imagesRecipes/zitronen_basilikum_pasta-petit-appetit.jpg",
+    "neededUtensils": [
+      {
+        "utensilPicture": "./icons/hand drawn/hd-grater.svg",
+        "utensilTitle": "Reibe"
+      },
+      {
+        "utensilPicture": ".icons/hand drawn/hd-cooking-pan.svg",
+        "utensilTitle": "Pfanne"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-cooking-pot.svg",
+        "utensilTitle": "Topf"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Messer"
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-butter.svg",
+        "ingredientTitle": "Butter",
+        "ingredientAmount": "1EL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Salz",
+        "ingredientAmount": "1 Prise"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Basilikum",
+        "ingredientAmount": "1/2 Bund"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-lemons.svg",
+        "ingredientTitle": "Zitrone",
+        "ingredientAmount": "1/2, Abrieb & Saft"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-sweet-sauce.svg",
+        "ingredientTitle": "Süße Sahne",
+        "ingredientAmount": "150ml"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-tagliatelle.svg",
+        "ingredientTitle": "Tagliatelle",
+        "ingredientAmount": "200g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-parmesan.svg",
+        "ingredientTitle": "Parmesan",
+        "ingredientAmount": "30g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-pine-nits.svg",
+        "ingredientTitle": "Pinienkerne",
+        "ingredientAmount": "50g"
+      }
+    ],
+    "preparing": "<ol><li>Butter mit Zitronenabrieb erhitzen und kurz köcheln lassen.</li><li>Basilikum fein hacken.</li><li>Sahne und Basilikum zur Butter hinzugeben.</li><li>Geriebenen Parmesan hinzugeben.</li><li>Kurz köcheln lassen und mit Salz und Pfeffer abschmecken.</li><li>Tagliatelle nach Packungsanleitung kochen.</li><li>Tagliatelle abgießen und mit der Sauce vermischen.</li><li>Auf niedriger Stufe kocheln lassen.</li><li>Pinienkerne in der Pfanne rösten.</li><li>Tagliatelle mit Pinienkernen und etwas Parmesanabrieb servieren.</li></ol>"
+  },
+  "KartoffelKarottenPfanne": {
+    "id": "KartoffelKarottenPfanne",
+    "title": "Kartoffel-Karotten-Pfanne",
+    "difficulty": "mittel",
+    "time": "15min",
+    "price": "~4,90€",
+    "healthIndicator": "B",
+    "healthIndicatorColor": "#73c82c",
+    "image": "./imagesRecipes/kartoffel-karotten-pfanne-LIDLkochen.jpg",
+    "neededUtensils": [
+      {
+        "utensilPicture": "./icons/hand drawn/hd-grater.svg",
+        "utensilTitle": "Schäler"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-cooking-pan.svg",
+        "utensilTitle": "Pfanne"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-cooking-pot.svg",
+        "utensilTitle": "Topf"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Messer"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Sieb"
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Kartoffeln",
+        "ingredientAmount": "600g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Salz",
+        "ingredientAmount": "1 Prise"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Karotten",
+        "ingredientAmount": "3Stk."
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Zwiebel",
+        "ingredientAmount": "1Stk."
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Petersilie",
+        "ingredientAmount": "15g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Pfeffer",
+        "ingredientAmount": "1 Prise"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Muskantnuss",
+        "ingredientAmount": "1 Prise."
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Schlagsahne",
+        "ingredientAmount": "125ml"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Öl",
+        "ingredientAmount": "3EL"
+      }
+    ],
+    "preparing": "<ol><li>Kartoffeln waschen, vierteln und in ca. 1 cm große Stücke schneiden.</li><li>In einem Topf Kartoffeln mit Salzwasser bedeckt aufkochen und zugedeckt ca. 10 Min. garen.</li><li>Karotten waschen, schälen und in dünne Scheiben schneiden.</li><li>Zwiebeln halbieren, schälen und fein würfeln.</li><li>Petersilie waschen, trocken schütteln, Blätter von den Stielen zupfen und fein hacken.</li><li>Kartoffeln in ein Sieb abgießen und abtropfen lassen.</li><li>In einer Pfanne Öl auf hoher Stufe erhitzen, Zwiebeln und Karotten darin ca. 2 Min. anbraten.</li><li>Kartoffeln zugeben und nochmals ca. 5 Min. kross braten.</li><li>Alles mit Salz, Pfeffer, Muskat würzen und mit Sahne ablöschen. </li><li> Ca. 1 Min. aufkochen lassen und ggf. nochmals abschmecken. Auf Tellern verteilen und mit Petersilie garniert servieren.</li></ol>"
+  }
+}
