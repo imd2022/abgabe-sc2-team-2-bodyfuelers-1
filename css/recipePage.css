@@ -65,7 +65,7 @@ h2 {
 }
 .searchbar button[type=submit]:hover {
   border-radius: 26px;
-  background-color: #e7e5ff;
+  background-color: #e7ebf3;
 }
 
 .searchbar:hover {
@@ -90,7 +90,7 @@ h2 {
 }
 
 .iconbutton:hover {
-  background-color: #e7e5ff;
+  background-color: #e7ebf3;
 }
 
 * {
@@ -188,13 +188,14 @@ main {
 .headerImage {
   margin-left: 250px;
   height: 300px;
-  width: 100%;
+  width: calc(100% - 250px);
   max-width: 1190px;
   object-fit: cover;
 }
 @media only screen and (max-width: 900px) {
   .headerImage {
     margin-left: 100px;
+    width: calc(100% - 100px);
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -236,6 +237,9 @@ main {
   border: none;
   outline: none;
   cursor: pointer;
+}
+.sticky .lines .special-iconbutton img {
+  pointer-events: none;
 }
 .sticky .lines .special-iconbutton:hover {
   background-color: #e7e5ff;
@@ -325,6 +329,10 @@ main {
   border: 2px solid #cac7c3;
   border-radius: 8px;
 }
+.chipinline #healthIndicator {
+  border: none;
+  background-color: #fbc707;
+}
 
 .ingredients-container h2 {
   margin: 0;
@@ -341,12 +349,15 @@ main {
   width: 70px;
   border-radius: 8px;
 }
-.ingredients-container .listed-ingredients {
+.ingredients-container .person-count-selection .person-count h2 {
+  padding: 0;
+}
+.ingredients-container #listed-ingredients {
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
 }
-.ingredients-container .listed-ingredients .ingredient {
+.ingredients-container #listed-ingredients .ingredient {
   height: 120px;
   min-width: 120px;
   padding: 4px;
@@ -357,36 +368,73 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.ingredients-container .listed-ingredients .ingredient img {
+.ingredients-container #listed-ingredients .ingredient img {
   stroke-width: 2px;
   height: 65px;
   padding: 8px;
   margin-bottom: 8px;
 }
-.ingredients-container .listed-ingredients .ingredient .ingredientContent {
+.ingredients-container #listed-ingredients .ingredient .ingredientContent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.ingredients-container .listed-ingredients .ingredient .ingredientContent .title {
+.ingredients-container #listed-ingredients .ingredient .ingredientContent .title {
   font-size: 14px;
 }
-.ingredients-container .listed-ingredients .ingredient .ingredientContent .amount {
+.ingredients-container #listed-ingredients .ingredient .ingredientContent .amount {
+  font-size: 12px;
+  opacity: 70%;
+}
+
+#listed-utensils {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+#listed-utensils .utensil {
+  height: 120px;
+  min-width: 120px;
+  padding: 4px;
+  margin: 0 8px 8px 0;
+  border: 2px solid #cac7c3;
+  border-radius: 25px;
+  background-color: #f3efe9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#listed-utensils .utensil img {
+  stroke-width: 2px;
+  height: 65px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+#listed-utensils .utensil .utensilContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#listed-utensils .utensil .utensilContent .title {
+  font-size: 14px;
+}
+#listed-utensils .utensil .utensilContent .amount {
   font-size: 12px;
   opacity: 70%;
 }
 
 .preparation-container {
+  max-width: 900px;
   padding-bottom: 40px;
   font-size: 25px;
 }
-.preparation-container ol {
+.preparation-container .preparation-list {
   padding-left: 80px;
   margin: 0;
 }
-.preparation-container ol li {
+.preparation-container .preparation-list li {
   margin: 16px 0;
-  line-height: 100%;
+  line-height: 140%;
 }
 
 .rating-container {
