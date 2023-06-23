@@ -149,5 +149,377 @@
       }
     ],
     "preparing": "<ol><li>Kartoffeln waschen, vierteln und in ca. 1 cm große Stücke schneiden.</li><li>In einem Topf Kartoffeln mit Salzwasser bedeckt aufkochen und zugedeckt ca. 10 Min. garen.</li><li>Karotten waschen, schälen und in dünne Scheiben schneiden.</li><li>Zwiebeln halbieren, schälen und fein würfeln.</li><li>Petersilie waschen, trocken schütteln, Blätter von den Stielen zupfen und fein hacken.</li><li>Kartoffeln in ein Sieb abgießen und abtropfen lassen.</li><li>In einer Pfanne Öl auf hoher Stufe erhitzen, Zwiebeln und Karotten darin ca. 2 Min. anbraten.</li><li>Kartoffeln zugeben und nochmals ca. 5 Min. kross braten.</li><li>Alles mit Salz, Pfeffer, Muskat würzen und mit Sahne ablöschen. </li><li> Ca. 1 Min. aufkochen lassen und ggf. nochmals abschmecken. Auf Tellern verteilen und mit Petersilie garniert servieren.</li></ol>"
+  },
+  "WassermelonenPizza": {
+    "id": "WassermelonenPizza",
+    "title": "Wassermelonen-Pizza",
+    "difficulty": "einfach",
+    "time": "15min",
+    "price": "~4,50€",
+    "healthIndicator": "A",
+    "healthIndicatorColor": "#0e8a4a",
+    "image": "./imagesRecipes/Wassermelonen-Pizza-springlane.jpg",
+    "neededUtensils": [
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Messer"
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "kleine Wassermelone",
+        "ingredientAmount": "1/2"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-yogurt.svg",
+        "ingredientTitle": "Griechischer Joghurt",
+        "ingredientAmount": "100g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Früchte",
+        "ingredientAmount": "100g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Kokosraspeln",
+        "ingredientAmount": "nach Belieben"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Ahornsirup",
+        "ingredientAmount": "15g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Nüsse",
+        "ingredientAmount": "40g"
+      }
+    ],
+    "preparing": "<ol><li>Die Wassermelone in 1-2 cm dicke Scheiben schneiden.</li><li>Anschließend je nach Größe vierteln oder achteln.</li><li>Die Melonenstücke mit dem griechischen Joghurt bestreichen und mit den Früchten und Toppings belegen.</li></ol>"
+  },
+  "KichererbsenOmlette": {
+    "id": "KichererbsenOmlette",
+    "title": "Kichererbsen Omlette",
+    "difficulty": "einfach",
+    "time": "15min",
+    "price": "~3,50€",
+    "healthIndicator": "A",
+    "healthIndicatorColor": "#0e8a4a",
+    "image": "./imagesRecipes/kichererbsen-omlette-Fooby.jpg",
+    "neededUtensils": [
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Messer"
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Hafermilch",
+        "ingredientAmount": "160ml"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-yogurt.svg",
+        "ingredientTitle": "Kichererbsenmehl",
+        "ingredientAmount": "90g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Nährhefeflocken",
+        "ingredientAmount": "2TL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Backpulver",
+        "ingredientAmount": "1/2TL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "geräucherte Paprika-Gewürz",
+        "ingredientAmount": "1/2TL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Kala Namak",
+        "ingredientAmount": "1/2TL"
+      }
+    ],
+    "preparing": "<ol><li>Pfanne auf mittlere Hitze erwärmen.</li><li>Ein kleine Schüssel mit hocherhitzbarem Öl und einem Silikonpinsel vorbereiten.</li><li>Eine Schüssel bereitstellen, pflanzliche Milch, Kichererbsen Mehl, Nährhefeflocken, Backpulver, geräucherte Paprika und Kala Namak hineingeben.</li><li>Mit einem Schneebesen zu einem glatten Teig verrühren.</li><li>Silkonpinsel in das Öl tauchen und den Pfannenboden einstreichen.</li><li>Mit einer Suppenkelle eine Portion Teig abschöpfen und in die Pfanne geben und Teig gleichmäßig verteilen.</li><li>Nach circa 2-3 Minuten wennden, wenn die Oberfläche Blasen bildet und schon leicht durchbäckt.<li>Herausnehmen und auf einem Teller platzieren und mit Kräutern anrichten und genießen!</li></ol>"
+  },
+  "Entenbrust": {
+    "id": "Entenbrust",
+    "title": "Gebratene Entenbrust",
+    "difficulty": "einfach",
+    "time": "20min",
+    "price": "~6,80€",
+    "healthIndicator": "D",
+    "healthIndicatorColor": "#f47216",
+    "image": "./imagesRecipes/gebratene-entenbrust-GuteKuecheAT.jpg",
+    "neededUtensils": [
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Messer"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-cooking-pan.svg",
+        "utensilTitle": "Pfanne"
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Entenbrüste",
+        "ingredientAmount": "je 180g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-yogurt.svg",
+        "ingredientTitle": "Öl",
+        "ingredientAmount": "1EL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Salz",
+        "ingredientAmount": "1 Prise"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Pfeffer",
+        "ingredientAmount": "1 Prise"
+      }
+    ],
+    "preparing": "<ol><li>Die Haut der küchenfertigen Entenbrüste mit einem sehr scharfen Messer rautenförmig einschneiden.</li><li>Anschließend das Fleisch mit Salz und Pfeffer gut würzen.</li><li>Den Backofen auf 180 Grad Ober-/Unterhitze vorheizen.</li><li>In eine ofenfeste Pfanne das Öl geben und erhitzen.</li><li>Die Entenbrüste mit der Hautseite nach unten hineinlegen und goldbraun anbraten lassen (bei nicht zu starker Hitze), umdrehen und nochmal 2 Minuten auf der anderen Seite braten lassen.</li><li>Danach die Pfanne für 10 bis 12 Minuten in den heißen Ofen stellen.</li><li>Die Entenbrüste nun herausnehmen, in Alufolie wickeln und 5 Minuten ruhen lassen.</li><li>Danach das Fleisch in Scheiben schneiden und mit Beilagen anrichten.</li></ol>"
+  },
+  "PeanutButterCups": {
+    "id": "PeanutButterCups",
+    "title": "Vegane Peanut Butter Cups",
+    "difficulty": "einfach",
+    "time": "15min",
+    "price": "~5,10€",
+    "healthIndicator": "E",
+    "healthIndicatorColor": "#ef3120",
+    "image": "./imagesRecipes/Vegane-Peanut-Butter-Cups-Iss-Happy.jpg",
+    "neededUtensils": [
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Messer"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Metallschüssel"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-cooking-pot.svg",
+        "utensilTitle": "Topf"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-cooking-pot.svg",
+        "utensilTitle": "Silikonförmchen"
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Dattel-Schokolade",
+        "ingredientAmount": "340g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-yogurt.svg",
+        "ingredientTitle": "Kokosöl",
+        "ingredientAmount": "1EL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Erdnussmus",
+        "ingredientAmount": "200g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Dattelpaste",
+        "ingredientAmount": "4EL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Erdnüsse",
+        "ingredientAmount": "60g, gehackt"
+      }
+    ],
+    "preparing": "<ol><li>Die Schokoladen Stücke zusammen mit ein paar Tropfen Kokosöl über einem Wasserbad schmelzen lassen.</li><li>Ein Muffin Blech mit Papier- oder Silikonförmchen bestücken und diese mit jeweils 1 EL geschmolzener Schokolade befüllen.</li><li>Die gefüllten Förmchen für ca. 10 Minuten ins Gefrierfach stellen und währenddessen die Füllung vorbereiten.</li><li>Hierfür das Erdnussmus in eine Schale geben und optional mit Dattelpaste verrühren. Die Konsistenz sollte nicht zu flüssig, aber auch nicht zu zäh sein.</li><li>Die Muffin Förmchen mit der fest gewordenen Schokolade aus dem Gefrierfach holen und jeweils mit ca. 1 EL der Erdnusscreme befüllen.</li><li>Die restliche geschmolzene Schokolade gleichmäßig auf die Förmchen verteilen, sodass die Erdnussfüllung vollständig bedeckt ist.</li><li>Zum Schluss vegane Peanut Butter Cups optional noch mit gehackten Erdnüssen bestreuen und weitere 10 bis 15 Minuten ins Gefrierfach stellen.</li><li>Du kannst die Törtchen im Gefrierfach lagern und solltest sie 10 Minuten vor dem Verzehr in den Kühlschrank stellen, damit sie die perfekte Konsistenz zum Essen erhalten.</li></ol>"
+  },
+  "Kabeljau": {
+    "id": "Kabeljau",
+    "title": "Gedünsteter Kabeljau auf Tomaten",
+    "difficulty": "einfach",
+    "time": "20min",
+    "price": "~7,60€",
+    "healthIndicator": "B",
+    "healthIndicatorColor": "#73c82c",
+    "image": "./imagesRecipes/geduensteter-kabeljau-EatSmarter.jpg",
+    "neededUtensils": [
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Messer"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-cooking-pan.svg",
+        "utensilTitle": "Pfanne"
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Kabeljaufilets",
+        "ingredientAmount": "360g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-yogurt.svg",
+        "ingredientTitle": "Fleischtomaten",
+        "ingredientAmount": "2Stk."
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Thymian",
+        "ingredientAmount": "einige Stiele"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Rosmarin",
+        "ingredientAmount": "1 Prise"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Kräuter",
+        "ingredientAmount": "nach Belieben"
+      }
+    ],
+    "preparing": "<ol><li>Tomate schälen und in Scheiben schneiden.</li><li>Tomatenscheiben in eine kleine Pfanne legen und mit Salz und Pfeffer würzen.</li><liDann einen Teil der Kräuter fein hacken und darüber streuen.</li><li>Das frische oder angetaute Kabeljaufilet auf die Tomaten und Kräuter legen.</li><li>Einen Hauch Salz darüber geben und die restlichen Kräuter darüber streuen.</li><li>Deckel auflegen und aufkochen lassen.</li><li> Hitze reduzieren und ca. 15 Minuten bei geschlossenem Deckel köcheln lassen, bis der Kabeljau gar ist.</li><li>Die Tomaten sind danach recht zerfallen, aber trotzdem schmackhaft.</li><li>Dazu esse ich gerne einen Salat oder Brot</li></ol>"
+  },
+  "NasiGoreng": {
+    "id": "NasiGoreng",
+    "title": "NasiGoreng",
+    "difficulty": "einfach",
+    "time": "25min",
+    "price": "~3,50€",
+    "healthIndicator": "C",
+    "healthIndicatorColor": "#fbc707",
+    "image": "./imagesRecipes/nasi-goreng-eatbetterDE.jpg",
+    "neededUtensils": [
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Messer"
+      },
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Wok"
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Knoblauchzehe",
+        "ingredientAmount": "1/2 Stk."
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-yogurt.svg",
+        "ingredientTitle": "Frühlingszwiebel",
+        "ingredientAmount": "2Stk."
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Chillischote",
+        "ingredientAmount": "1/2, rot"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Hühnerbrustfilet",
+        "ingredientAmount": "125g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Garnelen",
+        "ingredientAmount": "175g"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-eggs.svg",
+        "ingredientTitle": "Eier",
+        "ingredientAmount": "2Stk."
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-yogurt.svg",
+        "ingredientTitle": "Sojasauce",
+        "ingredientAmount": "2EL, hell."
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Sambal Olek",
+        "ingredientAmount": "1/4TL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Salz",
+        "ingredientAmount": "1 Prise"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Sesamöl",
+        "ingredientAmount": "2EL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-eggs.svg",
+        "ingredientTitle": "Reis",
+        "ingredientAmount": "200g, gekocht"
+      }
+    ],
+    "preparing": "<ol><li>Die Frühlingszwiebeln waschen, abtrocknen und in Ringe schneiden.</li><li>Den Knoblauch schälen und grob hacken.</li><li>Die Chilischote waschen, abtrocknen, der Länge nach aufschneiden, die Kerne entfernen und anschließend in feine Streifen schneiden.</li><li>Das Hähnchenfilet mit kaltem Wasser waschen, trockentupfen und in mundgerechte Stücke schneiden.</li><li>Die Garnelen kalt abwaschen, den Darm entfernen und trockentupfen.</li><li>Eier in eine kleine Schüssel schlagen.</li><li>1 EL Sojasauce, Sambal Oelek und 1 Prise Salz beifügen und mit einer Gabel verschlagen.</li><li>Den Wok erhitzen, 1 EL Öl beifügen und darin die Frühlingszwiebeln und die Chilistücke 3 Minuten anbraten, anschließend an den Wokrand hoch schieben.</li><li>1 EL Öl in die Mitte geben und nun darin das Hühnerfleisch 3 Minuten anbraten.</li><li>Anschließend die Garnelen und den Knoblauch beifügen und kurz mit anbraten, dann ebenfalls an den Rand schieben.</li><li>Die Eiermasse in die Mitte gießen und stocken lassen, dann an den Rand schieben. Nochmals Öl in die Mitte gießen und darin den bereits gekochten Reis etwa 3 Minuten braten.</li><li> Anschließend alle Zutaten im Wok vermengen und nochmals 2 Minuten pfannenrühren. Abschließend mit Sojasauce abschmecken.</li></ol>"
+  },
+  "BeerenQuarkCreme": {
+    "id": "BeerenQuarkCreme",
+    "title": "Vegane Beeren Quark Creme",
+    "difficulty": "einfach",
+    "time": "10min",
+    "price": "~2,50€",
+    "healthIndicator": "B",
+    "healthIndicatorColor": "#73c82c",
+    "image": "./imagesRecipes/vanille-quark-creme-mit-waldfruechten-Madame-Cuisine.jpg",
+    "neededUtensils": [
+      {
+        "utensilPicture": "./icons/hand drawn/hd-knife.svg",
+        "utensilTitle": "Gläser"
+      }
+    ],
+    "ingredients": [
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-yogurt.svg",
+        "ingredientTitle": "Soja-Joghurt",
+        "ingredientAmount": "1/2 Becher"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-yogurt.svg",
+        "ingredientTitle": "veganer Frischkäse",
+        "ingredientAmount": "1/2 Pck."
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Erythrit",
+        "ingredientAmount": "1EL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Vanilleextrakt",
+        "ingredientAmount": "1/2 TL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-salt.svg",
+        "ingredientTitle": "Zitronenschale",
+        "ingredientAmount": "1/2 TL"
+      },
+      {
+        "ingredientPicture": "./icons/hand drawn/hd-basil.svg",
+        "ingredientTitle": "Beerenmischung",
+        "ingredientAmount": "125g, TK"
+      }
+    ],
+    "preparing": "<ol><li>Frischkäse und Joghurt gut vermengen, Erythrit, Zitronenschale und Vanille zugeben und gut verrühren.</li><li>In Gläser füllen und für ein bis zwei Stunden kühl stellen.</li><li>Die Beeren auftauen, etwas Zimt hinzufügen und auf der Creme verteilen.</li></ol>"
   }
 }

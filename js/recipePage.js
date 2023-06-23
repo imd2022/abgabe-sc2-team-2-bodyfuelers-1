@@ -69,7 +69,6 @@ function createIngredientsCard(element) {
 }
 
 function createUtensilsCard(element) {
-  console.log(element);
   const utensilCard = document.createElement("div");
   utensilCard.classList.add("utensil");
   const utensilsCardImage = document.createElement("img");
