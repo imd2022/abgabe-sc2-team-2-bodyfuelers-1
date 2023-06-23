@@ -5,8 +5,10 @@ $B-textlight: #fffbf6;
 $C-lightgrey: #f3efe9;
 $C-darkgrey: #cac7c3;
 $C-grayblue: #e7ebf3;
-$C-greypurple: #e7e5ff;
-$D-CTAdominat: #312d5c;
+$C-orangedark: #ffdaba;
+$C-orangelight: #ffeee0;
+$D-CTAdominat: #ff7a00;
+$D-CTAnormal: #ffa647;
 $D-smallinteraction: #6661a3;
 $E-totallyhealthy: #0e8a4a;
 $E-healthy: #73c82c;
@@ -82,7 +84,7 @@ h1 {
 
   button[type="submit"]:hover {
     border-radius: 26px;
-    background-color: #e7e5ff;
+    background-color: $C-orangedark;
   }
 }
 
@@ -108,5 +110,5 @@ h1 {
 }
 
 .iconbutton:hover {
-  background-color: #e7e5ff;
+  background-color: $C-orangedark;
 }
