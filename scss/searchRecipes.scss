@@ -150,7 +150,7 @@ main {
     height: 32px;
     font-size: 14px;
     border-radius: 8px;
-    background-color: $C-greypurple;
+    background-color: $C-orangedark;
 
     img {
       padding-left: 8px;
@@ -168,7 +168,7 @@ main {
 
   .chip:hover {
     transition: all 300ms ease-in-out;
-    background-color: #d7d5ee;
+    background-color: $C-orangelight;
   }
 }
 

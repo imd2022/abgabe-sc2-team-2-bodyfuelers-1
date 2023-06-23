@@ -65,7 +65,7 @@ h2 {
 }
 .searchbar button[type=submit]:hover {
   border-radius: 26px;
-  background-color: #e7ebf3;
+  background-color: #ffdaba;
 }
 
 .searchbar:hover {
@@ -90,7 +90,7 @@ h2 {
 }
 
 .iconbutton:hover {
-  background-color: #e7ebf3;
+  background-color: #ffdaba;
 }
 
 /*# sourceMappingURL=main.css.map */
