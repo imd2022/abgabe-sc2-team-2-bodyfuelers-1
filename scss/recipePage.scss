@@ -282,7 +282,7 @@ main {
 
     .ingredient {
       height: 120px;
-      min-width: 120px;
+      width: 120px;
       padding: 4px;
       margin: 0 8px 8px 0;
       border: 2px solid $C-darkgrey;
@@ -290,10 +290,11 @@ main {
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
 
       img {
         stroke-width: 2px;
-        height: 65px;
+        height: 50px;
         padding: 8px;
         margin-bottom: 8px;
       }
@@ -305,6 +306,8 @@ main {
 
         .title {
           font-size: 14px;
+          line-height: 100%;
+          height: 30px;
         }
 
         .amount {
@@ -323,7 +326,7 @@ main {
 
   .utensil {
     height: 120px;
-    min-width: 120px;
+    width: 120px;
     padding: 4px;
     margin: 0 8px 8px 0;
     border: 2px solid $C-darkgrey;
@@ -335,7 +338,7 @@ main {
 
     img {
       stroke-width: 2px;
-      height: 65px;
+      height: 50px;
       padding: 8px;
       margin-bottom: 8px;
     }
@@ -346,6 +349,7 @@ main {
       align-items: center;
 
       .title {
+        margin-top: 15px;
         font-size: 14px;
       }
 
@@ -374,6 +378,46 @@ main {
 }
 
 .rating-container {
-  background-color: $C-orangedark;
-  height: 1000px;
+  margin-bottom: 100px;
+  .rating-box {
+    margin-bottom: 12px;
+    background-color: $E-textfields;
+    padding: 30px 40px;
+    border-radius: 12px;
+    max-width: 900px;
+
+    .rating-stars {
+      display: inline-block;
+    }
+
+    .rating-date {
+      font-size: 14px;
+    }
+
+    .like-comment {
+      margin-top: 12px;
+      display: flex;
+      justify-content: end;
+
+      .like-button {
+        border: none;
+        width: 48px;
+        background: url(../icons/org/org-like-not-filled.svg) no-repeat;
+        background-position: center;
+        margin-left: 40px;
+
+        &.liked {
+          background: url(../icons/org/org-like-filled.svg) no-repeat;
+          background-position: center;
+          cursor: pointer;
+        }
+      }
+
+      .like-button:hover {
+        background: url(../icons/org/org-like-filled.svg) no-repeat;
+        background-position: center;
+        cursor: pointer;
+      }
+    }
+  }
 }

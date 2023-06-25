@@ -113,3 +113,22 @@ fetch("./recipeContent.json").then(function (response) {
     });
   });
 });
+
+/*like button */
+function like() {
+  document
+    .getElementsByClassName(".like-button")
+    .addEventListener("click", function (e) {
+      e.target.classList.toggle("liked");
+    });
+}
+
+/*function like(event) {
+  console.log(event.currentTarget);
+  if (event.currentTarget.matches(".active")) {
+    let element = document.getElementsByClassName("active");
+    element.classList.remove("active");
+  } else {
+    event.currentTarget.className += " active";
+  }
+}*/
