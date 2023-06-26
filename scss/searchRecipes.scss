@@ -3,90 +3,6 @@
 * {
   box-sizing: border-box;
 }
-nav {
-  height: 100%;
-  width: 250px;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: $C-grayblue; /* Black*/
-  overflow-x: hidden;
-
-  @media only screen and (max-width: 900px) {
-    width: 100px;
-  }
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  margin-left: 250px;
-  padding: 0 25px;
-  background-color: $A-background;
-
-  @media only screen and (max-width: 900px) {
-    margin-left: 100px;
-  }
-}
-.buddy-container {
-  #buddy {
-    z-index: 21;
-    position: fixed;
-    right: 50px;
-    bottom: 20px;
-
-    @media only screen and (max-width: 1350px) {
-      position: fixed;
-
-      bottom: -70px;
-    }
-  }
-
-  #buddy:hover {
-    transition: all 150ms ease-in-out;
-    transform: scale(1.06);
-    cursor: pointer;
-
-    @media only screen and (max-width: 1350px) {
-      transition: all 150ms ease-in-out;
-      position: fixed;
-      right: 50px;
-      bottom: 20px;
-    }
-  }
-
-  #buddysMessage {
-    visibility: hidden;
-    z-index: 21;
-    position: fixed;
-    right: 50px;
-    bottom: 160px;
-    max-width: 300px;
-    height: auto;
-    border-radius: 12px;
-    background-color: $D-smallinteraction;
-    padding: 0 16px;
-    //box-shadow: 0px 5px 10px $D-smallinteraction;
-
-    .messagetext {
-      color: $A-background;
-    }
-  }
-
-  #buddysMessage::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    right: 45px;
-    width: 0;
-    border-top: 20px solid $D-smallinteraction;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-  }
-}
 
 .tablinks {
   border: none;
@@ -94,42 +10,42 @@ main {
   background-color: transparent;
   font-size: 20px;
   margin-bottom: 32px;
-}
 
-.active {
-  font-weight: bold;
-  position: relative;
+  &.active {
+    font-weight: bold;
+    position: relative;
 
-  #newRecipe {
-    background-color: $B-textdark;
-    height: 5px;
-    width: 70px;
-    border-radius: 5px;
+    #newRecipe {
+      background-color: $B-textdark;
+      height: 5px;
+      width: 70px;
+      border-radius: 5px;
+    }
+
+    #savedRecipe {
+      margin: auto;
+      width: 50%;
+      background-color: $B-textdark;
+      height: 5px;
+      width: 70px;
+      border-radius: 5px;
+    }
+
+    #ownRecipe {
+      position: absolute;
+      right: 6px;
+      background-color: $B-textdark;
+      height: 5px;
+      width: 70px;
+      border-radius: 5px;
+    }
   }
 
-  #savedRecipe {
-    margin: auto;
-    width: 50%;
-    background-color: $B-textdark;
-    height: 5px;
-    width: 70px;
-    border-radius: 5px;
+  &.tablinks:hover {
+    transition: all 150ms ease-in-out;
+    font-weight: bold;
+    cursor: pointer;
   }
-
-  #ownRecipe {
-    position: absolute;
-    right: 6px;
-    background-color: $B-textdark;
-    height: 5px;
-    width: 70px;
-    border-radius: 5px;
-  }
-}
-
-.tablinks:hover {
-  transition: all 150ms ease-in-out;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .searchandfilter {
@@ -164,11 +80,11 @@ main {
       align-items: center;
       cursor: pointer;
     }
-  }
 
-  .chip:hover {
-    transition: all 300ms ease-in-out;
-    background-color: $C-orangelight;
+    &.chip:hover {
+      transition: all 300ms ease-in-out;
+      background-color: $C-orangelight;
+    }
   }
 }
 
@@ -265,13 +181,13 @@ main {
           justify-content: space-between;
         }
       }
-    }
 
-    .card-item:hover {
-      transition: all 375ms ease-in-out;
-      background-color: $C-lightgrey;
-      transform: scale(1.02);
-      cursor: pointer;
+      &.card-item:hover {
+        transition: all 375ms ease-in-out;
+        background-color: $C-lightgrey;
+        transform: scale(1.02);
+        cursor: pointer;
+      }
     }
   }
 }

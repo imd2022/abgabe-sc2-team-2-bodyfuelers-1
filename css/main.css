@@ -9,6 +9,101 @@
   color: #272626;
 }
 
+body {
+  margin: 0;
+  background: #fffbf6;
+}
+
+.wholeContent {
+  max-width: 1440px;
+  margin: auto;
+}
+
+nav {
+  height: 100%;
+  width: 250px;
+  border-left: 2px solid #fff;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  background-color: #e7ebf3;
+  /* Black*/
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 900px) {
+  nav {
+    width: 100px;
+  }
+}
+
+main {
+  margin-left: 250px;
+  padding: 0 25px;
+  background-color: #fffbf6;
+  border-right: 2px solid #f3efe9;
+  position: relative;
+}
+@media only screen and (max-width: 900px) {
+  main {
+    margin-left: 100px;
+  }
+}
+
+.buddy-container #buddy {
+  z-index: 21;
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+}
+@media only screen and (max-width: 1350px) {
+  .buddy-container #buddy {
+    position: fixed;
+    bottom: -70px;
+  }
+}
+.buddy-container #buddy#buddy:hover {
+  transition: all 150ms;
+  transition-timing-function: cubic-bezier(0.87, -0.78, 0.12, 1.48);
+  transform: translateY(100px);
+  cursor: pointer;
+}
+@media only screen and (max-width: 1350px) {
+  .buddy-container #buddy#buddy:hover {
+    transition: all 150ms ease-in-out;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+  }
+}
+.buddy-container #buddysMessage {
+  visibility: hidden;
+  z-index: 21;
+  position: fixed;
+  right: 50px;
+  bottom: 60px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #6661a3;
+  padding: 0 16px;
+}
+.buddy-container #buddysMessage .messagetext {
+  color: #fffbf6;
+}
+.buddy-container #buddysMessage#buddysMessage::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 45px;
+  width: 0;
+  border-top: 20px solid #6661a3;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
 /* font-sizes */
 h1 {
   margin: 0 0 24px 0;
@@ -67,8 +162,7 @@ h2 {
   border-radius: 26px;
   background-color: #ffdaba;
 }
-
-.searchbar:hover {
+.searchbar.searchbar:hover {
   content: "";
   background-color: #f2f1ff;
 }
@@ -88,8 +182,7 @@ h2 {
   outline: none;
   cursor: pointer;
 }
-
-.iconbutton:hover {
+.iconbutton.iconbutton:hover {
   background-color: #ffdaba;
 }
 

@@ -1,1 +1,58 @@
 @import "main";
+
+main {
+  height: 100vh;
+}
+
+.tablinks {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-bottom: 32px;
+
+  &.active {
+    font-weight: bold;
+    position: relative;
+
+    #newRecipe {
+      background-color: $B-textdark;
+      height: 5px;
+      width: 70px;
+      border-radius: 5px;
+    }
+
+    #savedRecipe {
+      margin: auto;
+      width: 50%;
+      background-color: $B-textdark;
+      height: 5px;
+      width: 70px;
+      border-radius: 5px;
+    }
+
+    #ownRecipe {
+      position: absolute;
+      right: 6px;
+      background-color: $B-textdark;
+      height: 5px;
+      width: 70px;
+      border-radius: 5px;
+    }
+  }
+
+  &.tablinks:hover {
+    transition: all 150ms ease-in-out;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.search-container {
+  max-height: 60vh;
+  max-width: 1190px;
+  margin-right: 200px;
+  padding: 50px;
+  border: 2px solid $C-darkgrey;
+  border-radius: 12px;
+}

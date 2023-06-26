@@ -7,10 +7,71 @@
     <title>Document</title>
   </head>
   <body>
-    <form class="searchbar">
-      <input type="search" placeholder="z.B. Salat mit Tomaten" />
-      <button type="submit"></button>
-    </form>
+    <div class="wholeContent">
+      <nav>Hallo, ich bin der Placeholder für Darias NavBar</nav>
+      <main>
+        <div class="buddy-container">
+          <img
+          onmouseover="buddysMessage('buddysMessage')"
+          id="buddy"
+          src="./icons/our-buddy.svg"
+          alt="Buddy"
+          />
+          <div id="buddysMessage">
+            <p class="messagetext">
+            Ich empfehle dir für nächste Woche die Tagliatelle mit
+            Zitronen-Basilikum-Sauce einzuplanen. Das Rezept hat super
+            Bewertungen!
+            </p>
+          </div>
+        </div>
+      
+        <div class="sticky">
+         <h1 id="newRecipesHeadline" class="tabcontent">
+          Lasse dich von tollen neuen Rezepten inspirieren!
+         </h1>
+      <h1 id="savedRecipesHeadline" class="tabcontent" style="display: none">
+        Hier findest du all deine gespeicherten Rezepte!
+      </h1>
+      <h1 id="ownRecipesHeadline" class="tabcontent" style="display: none">
+        Mache deine eigenen Rezepte gesünder!
+      </h1>
+
+      <div class="tab">
+        <button
+          class="tablinks active"
+          onclick="tabElement(event, 'newRecipes')"
+        >
+          neue Rezepte
+          <div id="newRecipe"></div>
+        </button>
+        <button class="tablinks" onclick="tabElement(event, 'savedRecipes')">
+          gespeicherte Rezepte
+          <div id="savedRecipe"></div>
+        </button>
+        <button class="tablinks" onclick="tabElement(event, 'ownRecipes')">
+          eigene Rezepte
+          <div id="ownRecipe"></div>
+        </button>
+      </div>
+      
+     <div class="search-container">
+      <form class="searchbar">
+        <input type="search" placeholder="z.B. Salat mit Tomaten" />
+        <button type="submit"></button>
+      </form>
+
+      <div class="chip-container">
+        <div class="chip">
+          <p class="filterName">Ernährungsform</p>
+          <img src="icons/org/org-arrow-without-line.svg" alt="arrow down">
+        </div>
+      </div>
+     </div>
+      
+    </main>
+
     <script src="./js/searchingPage.js"></script>
+  </div>
   </body>
 </html>

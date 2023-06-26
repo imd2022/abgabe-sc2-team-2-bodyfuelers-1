@@ -9,6 +9,101 @@
   color: #272626;
 }
 
+body {
+  margin: 0;
+  background: #fffbf6;
+}
+
+.wholeContent {
+  max-width: 1440px;
+  margin: auto;
+}
+
+nav {
+  height: 100%;
+  width: 250px;
+  border-left: 2px solid #fff;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  background-color: #e7ebf3;
+  /* Black*/
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 900px) {
+  nav {
+    width: 100px;
+  }
+}
+
+main {
+  margin-left: 250px;
+  padding: 0 25px;
+  background-color: #fffbf6;
+  border-right: 2px solid #f3efe9;
+  position: relative;
+}
+@media only screen and (max-width: 900px) {
+  main {
+    margin-left: 100px;
+  }
+}
+
+.buddy-container #buddy {
+  z-index: 21;
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+}
+@media only screen and (max-width: 1350px) {
+  .buddy-container #buddy {
+    position: fixed;
+    bottom: -70px;
+  }
+}
+.buddy-container #buddy#buddy:hover {
+  transition: all 150ms;
+  transition-timing-function: cubic-bezier(0.87, -0.78, 0.12, 1.48);
+  transform: translateY(100px);
+  cursor: pointer;
+}
+@media only screen and (max-width: 1350px) {
+  .buddy-container #buddy#buddy:hover {
+    transition: all 150ms ease-in-out;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+  }
+}
+.buddy-container #buddysMessage {
+  visibility: hidden;
+  z-index: 21;
+  position: fixed;
+  right: 50px;
+  bottom: 60px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #6661a3;
+  padding: 0 16px;
+}
+.buddy-container #buddysMessage .messagetext {
+  color: #fffbf6;
+}
+.buddy-container #buddysMessage#buddysMessage::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 45px;
+  width: 0;
+  border-top: 20px solid #6661a3;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
 /* font-sizes */
 h1 {
   margin: 0 0 24px 0;
@@ -67,8 +162,7 @@ h2 {
   border-radius: 26px;
   background-color: #ffdaba;
 }
-
-.searchbar:hover {
+.searchbar.searchbar:hover {
   content: "";
   background-color: #f2f1ff;
 }
@@ -88,99 +182,12 @@ h2 {
   outline: none;
   cursor: pointer;
 }
-
-.iconbutton:hover {
+.iconbutton.iconbutton:hover {
   background-color: #ffdaba;
 }
 
 * {
   box-sizing: border-box;
-}
-
-nav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  /* Stay at the top */
-  left: 0;
-  background-color: #e7ebf3;
-  /* Black*/
-  overflow-x: hidden;
-}
-@media only screen and (max-width: 900px) {
-  nav {
-    width: 100px;
-  }
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  margin-left: 250px;
-  padding: 0 25px;
-  background-color: #fffbf6;
-}
-@media only screen and (max-width: 900px) {
-  main {
-    margin-left: 100px;
-  }
-}
-
-.buddy-container #buddy {
-  z-index: 21;
-  position: fixed;
-  right: 50px;
-  bottom: 20px;
-}
-@media only screen and (max-width: 1350px) {
-  .buddy-container #buddy {
-    position: fixed;
-    bottom: -70px;
-  }
-}
-.buddy-container #buddy:hover {
-  transition: all 150ms ease-in-out;
-  transform: scale(1.06);
-  cursor: pointer;
-}
-@media only screen and (max-width: 1350px) {
-  .buddy-container #buddy:hover {
-    transition: all 150ms ease-in-out;
-    position: fixed;
-    right: 50px;
-    bottom: 20px;
-  }
-}
-.buddy-container #buddysMessage {
-  visibility: hidden;
-  z-index: 21;
-  position: fixed;
-  right: 50px;
-  bottom: 160px;
-  max-width: 300px;
-  height: auto;
-  border-radius: 12px;
-  background-color: #6661a3;
-  padding: 0 16px;
-}
-.buddy-container #buddysMessage .messagetext {
-  color: #fffbf6;
-}
-.buddy-container #buddysMessage::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  right: 45px;
-  width: 0;
-  border-top: 20px solid #6661a3;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
 }
 
 .tablinks {
@@ -190,18 +197,17 @@ main {
   font-size: 20px;
   margin-bottom: 32px;
 }
-
-.active {
+.tablinks.active {
   font-weight: bold;
   position: relative;
 }
-.active #newRecipe {
+.tablinks.active #newRecipe {
   background-color: #272626;
   height: 5px;
   width: 70px;
   border-radius: 5px;
 }
-.active #savedRecipe {
+.tablinks.active #savedRecipe {
   margin: auto;
   width: 50%;
   background-color: #272626;
@@ -209,7 +215,7 @@ main {
   width: 70px;
   border-radius: 5px;
 }
-.active #ownRecipe {
+.tablinks.active #ownRecipe {
   position: absolute;
   right: 6px;
   background-color: #272626;
@@ -217,8 +223,7 @@ main {
   width: 70px;
   border-radius: 5px;
 }
-
-.tablinks:hover {
+.tablinks.tablinks:hover {
   transition: all 150ms ease-in-out;
   font-weight: bold;
   cursor: pointer;
@@ -255,7 +260,7 @@ main {
   align-items: center;
   cursor: pointer;
 }
-.chipinline .chip:hover {
+.chipinline .chip.chip:hover {
   transition: all 300ms ease-in-out;
   background-color: #ffeee0;
 }
@@ -348,7 +353,7 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.recipes-overview-container .recipes-categories .card-item:hover {
+.recipes-overview-container .recipes-categories .card-item.card-item:hover {
   transition: all 375ms ease-in-out;
   background-color: #f3efe9;
   transform: scale(1.02);
