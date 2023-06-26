@@ -4,55 +4,43 @@ main {
   height: 100vh;
 }
 
-.tablinks {
-  border: none;
-  outline: none;
-  background-color: transparent;
-  font-size: 20px;
-  margin-bottom: 32px;
-
-  &.active {
-    font-weight: bold;
-    position: relative;
-
-    #newRecipe {
-      background-color: $B-textdark;
-      height: 5px;
-      width: 70px;
-      border-radius: 5px;
-    }
-
-    #savedRecipe {
-      margin: auto;
-      width: 50%;
-      background-color: $B-textdark;
-      height: 5px;
-      width: 70px;
-      border-radius: 5px;
-    }
-
-    #ownRecipe {
-      position: absolute;
-      right: 6px;
-      background-color: $B-textdark;
-      height: 5px;
-      width: 70px;
-      border-radius: 5px;
-    }
-  }
-
-  &.tablinks:hover {
-    transition: all 150ms ease-in-out;
-    font-weight: bold;
-    cursor: pointer;
-  }
-}
-
 .search-container {
   max-height: 60vh;
   max-width: 1190px;
-  margin-right: 200px;
+  margin: 50px 200px 0 0;
   padding: 50px;
   border: 2px solid $C-darkgrey;
   border-radius: 12px;
+
+  @media only screen and (max-width: 1440px) {
+    max-width: none;
+    margin-right: 0px;
+  }
+
+  #chip-container {
+    margin-top: 40px;
+
+    .chip {
+      width: fit-content;
+      margin-bottom: 8px;
+
+      .chip-content {
+        background-color: $C-orangedark;
+        display: flex;
+        padding: 8px 16px;
+        align-items: center;
+        border-radius: 12px;
+
+        .filterName {
+          margin: 0 12px 0 0;
+          font-size: 14px;
+        }
+
+        img {
+          rotate: 270deg;
+          height: 15px;
+        }
+      }
+    }
+  }
 }
