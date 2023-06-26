@@ -180,7 +180,10 @@
                 persönlich etwas mehr würzen.
               </div>
               <div class="like-comment">
-                <button onclick="like()" class="like-button"></button>
+                <button
+                  onclick="toggleLike(event)"
+                  class="like-button"
+                ></button>
 
                 <button class="iconbutton comment-button">
                   <img src="./icons/org/org-comment.svg" alt="comment" />
@@ -221,9 +224,12 @@
                 nämlich kochfaul haha.
               </div>
               <div class="like-comment">
-                <button class="like-button"></button>
+                <button
+                  onclick="toggleLike(event)"
+                  class="like-button"
+                ></button>
 
-                <button onclick="like()" class="iconbutton comment-button">
+                <button class="iconbutton comment-button">
                   <img src="./icons/org/org-comment.svg" alt="comment" />
                 </button>
               </div>

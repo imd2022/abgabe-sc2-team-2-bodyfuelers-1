@@ -114,21 +114,16 @@ fetch("./recipeContent.json").then(function (response) {
   });
 });
 
-/*like button */
-function like() {
-  document
-    .getElementsByClassName(".like-button")
-    .addEventListener("click", function (e) {
-      e.target.classList.toggle("liked");
-    });
+/*triggering the like button */
+function toggleLike(event) {
+  event.target.classList.toggle("liked");
 }
 
-/*function like(event) {
-  console.log(event.currentTarget);
-  if (event.currentTarget.matches(".active")) {
-    let element = document.getElementsByClassName("active");
-    element.classList.remove("active");
-  } else {
-    event.currentTarget.className += " active";
-  }
-}*/
+/* ----variation like button without eventListener in HTML-----
+const likeButtons = document.getElementsByClassName("like-button");
+
+  for (let i = 0; i < likeButtons.length; i++) {
+    likeButtons[i].addEventListener("click", function (event) {
+      event.target.classList.toggle("liked");
+    });
+*/
