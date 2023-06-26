@@ -16,6 +16,11 @@ main {
     max-width: none;
     margin-right: 0px;
   }
+  .search-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   #chip-container {
     margin-top: 40px;

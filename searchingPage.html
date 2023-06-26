@@ -29,10 +29,18 @@
         <h1>Verfeinere deine Suche nach neuen Rezepten!</h1>
 
         <div class="search-container">
-          <form class="searchbar">
-            <input type="search" placeholder="z.B. Salat mit Tomaten" />
-            <button type="submit"></button>
-          </form>
+          <div class="search-header">
+            <form class="searchbar">
+              <input type="search" placeholder="z.B. Salat mit Tomaten" />
+              <button type="submit"></button>
+            </form>
+            <button
+              onclick="backToSearchPage()"
+              class="iconbutton close-button"
+            >
+              <img src="./icons/org/org-close.svg" alt="close button" />
+            </button>
+          </div>
 
           <div id="chip-container"></div>
         </div>
