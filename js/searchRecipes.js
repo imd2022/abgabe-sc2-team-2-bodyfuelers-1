@@ -17,7 +17,7 @@ function tabElement(evt, recipeType) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(recipeType).style.display = "block";
+  document.getElementById(recipeType).style.display = "grid";
   document.getElementById(recipeType + "Headline").style.display = "block";
   evt.currentTarget.className += " active";
 }
