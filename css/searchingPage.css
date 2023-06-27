@@ -166,7 +166,7 @@ h2 {
 }
 .searchbar.searchbar:hover {
   content: "";
-  background-color: #f2f1ff;
+  background-color: #e7ebf3;
 }
 
 /* icon button styling */
@@ -220,6 +220,7 @@ main {
   margin-bottom: 8px;
 }
 .search-container #chip-container .chip .chip-content {
+  border: none;
   background-color: #ffdaba;
   display: flex;
   padding: 8px 16px;
