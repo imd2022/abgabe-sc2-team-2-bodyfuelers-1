@@ -109,3 +109,8 @@ function goToRecipePage(event) {
   const currentId = event.target.closest(".card-item").id; //closest function heading toward the document root which is the CSS selector
   window.location.href = "/recipePage.html?ID=" + currentId;
 }
+
+/* change Page when clicking on "+"-Button at own recipes tab */
+function goToAddRecipePage(event) {
+  window.location.href = "/addRecipe.html";
+}
