@@ -72,12 +72,15 @@ let chips = [
   },
 ];
 
-//console.table(chips);
+function createChips(chip, dropdown) {
+  const createdChipContentContainer = document.createElement("div");
+  createdChipContentContainer.classList.add("chip-content-container");
 
-function createChips(chip) {
+  //creating chip as child of createdChipContentContainer
   const createdChip = document.createElement("div");
   createdChip.classList.add("chip");
-  const chipContent = document.createElement("div");
+  createdChipContentContainer.appendChild(createdChip);
+  const chipContent = document.createElement("button");
   chipContent.classList.add("chip-content");
   createdChip.appendChild(chipContent);
   const chipTitle = document.createElement("p");
@@ -87,10 +90,52 @@ function createChips(chip) {
   const chipImage = document.createElement("img");
   chipImage.src = "../icons/org/org-arrow-without-line.svg";
   chipContent.appendChild(chipImage);
-  return createdChip;
+
+  //creating dropdown content as child of createdChipContentContainer
+  const createDropdownContent = document.createElement("div");
+  createDropdownContent.classList.add("dropdown-content");
+  createdChipContentContainer.appendChild(createDropdownContent);
+  const checkboxContainer = document.createElement("form");
+  checkboxContainer.classList.add("checkbox-container");
+  createDropdownContent.appendChild(checkboxContainer);
+  const createLabel = document.createElement("label");
+  createLabel.classList.add("form-control");
+  createLabel.innerHTML = dropdown;
+  checkboxContainer.appendChild(createLabel);
+  const createCheckbox = document.createElement("input");
+  createCheckbox.type = "checkbox";
+  createCheckbox.name = "name";
+  createCheckbox.value = "value";
+  createCheckbox.id = "id";
+  createLabel.appendChild(createCheckbox);
+
+  return createdChipContentContainer;
 }
 
 for (let i = 0; i < chips.length; i++) {
-  let chipElement = createChips(chips[i]);
-  document.getElementById("chip-container").appendChild(chipElement);
+  for (let j = 0; j < chips[i].length; j++) {
+    console.log(chips[i].dropdownContent[j]);
+    //let chipElement = createChips(chips[i], chips[i].dropdownContent[j]);
+
+    //document.getElementById("chip-container").appendChild(chipElement);
+  }
+}
+
+function activateDropdown(event) {
+  const currentClass = event.target.closest(".chip-content");
+  currentClass.classList.toggle("active");
+
+  const currentId = document.getElementById("testButtonDropdown");
+  currentId.classList.toggle("show");
+
+  /*if (currentClass.classList[1] === "active") {
+    const pasteShow = document.querySelectorAll(".dropdown-content");
+
+        if (pasteShow[0].classList.length < 2) {
+      pasteShow[0].className += " show";
+    } else {
+      pasteShow
+      console.log(pasteShow[0].classList);
+    }
+  }*/
 }
