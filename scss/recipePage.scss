@@ -54,6 +54,7 @@
       border: none;
       outline: none;
       cursor: pointer;
+      transition: all 500ms cubic-bezier(0, 0, 0.58, 1);
 
       img {
         pointer-events: none;
@@ -119,6 +120,7 @@
         &.dropdown-content a:hover {
           background-color: $C-orangedark;
           border-radius: 0 0 8px 8px;
+          transition: all 500ms cubic-bezier(0, 0, 0.58, 1);
         }
 
         &.show {
@@ -321,6 +323,7 @@
         background: url(../icons/org/org-like-not-filled.svg) no-repeat;
         background-position: center;
         margin-left: 40px;
+        transition: all 300ms cubic-bezier(0, 0, 0.58, 1);
 
         &.liked {
           background: url(../icons/org/org-like-filled.svg) no-repeat;
