@@ -1,0 +1,91 @@
+@import "main";
+// nav css
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: $A-background;
+}
+
+a {
+  all: none;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+
+  img {
+    display: inline-block;
+    margin-right: 10px;
+    height: 21px;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: block;
+  padding: 6px;
+
+  a {
+    display: block flex;
+    align-items: center;
+  }
+}
+
+a:hover,
+.active {
+  font-weight: 700;
+  padding-bottom: 8px;
+  display: block;
+}
+
+a:hover::after,
+.active::after {
+  content: "";
+  border-bottom: 3px solid;
+  width: 60px;
+  height: 4px;
+  display: block;
+}
+
+nav {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 230px;
+  height: 100vh;
+  padding: 10px 20px 20px 20px;
+  background: $C-grayblue;
+  font-size: 20x;
+  line-height: 150%;
+  letter-spacing: -0.266px;
+}
+
+.upper-nav {
+  flex-grow: 1;
+}
+
+.buddy-nav-logo {
+  margin-bottom: 20px;
+}
+
+.sub-list {
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.266px;
+
+  a:hover,
+  .sub-active {
+    font-weight: 700;
+    padding-bottom: 0px;
+  }
+
+  a:hover::after {
+    content: none;
+  }
+}
+
+//addRecipe css
