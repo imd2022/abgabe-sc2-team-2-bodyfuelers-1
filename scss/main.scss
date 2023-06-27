@@ -40,7 +40,7 @@ body {
 
 nav {
   height: 100%;
-  width: 250px;
+  width: 230px;
   border-left: 2px solid #fff;
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -53,8 +53,9 @@ nav {
   }
 }
 
-main {
-  margin-left: 250px;
+#main {
+  min-height: 100vh;
+  margin-left: 230px;
   padding: 0 25px;
   background-color: $A-background;
   border-right: 2px solid $C-lightgrey;
@@ -69,12 +70,12 @@ main {
   #buddy {
     z-index: 21;
     position: fixed;
-    right: 50px;
+    right: calc(50vw - 720px + 25px);
     bottom: 20px;
 
-    @media only screen and (max-width: 1350px) {
+    @media only screen and (max-width: 1440px) {
       position: fixed;
-
+      right: 25px;
       bottom: -70px;
     }
 
@@ -84,10 +85,10 @@ main {
       transform: translateY(100px);
       cursor: pointer;
 
-      @media only screen and (max-width: 1350px) {
+      @media only screen and (max-width: 1250px) {
         transition: all 150ms ease-in-out;
         position: fixed;
-        right: 50px;
+        right: 25px;
         bottom: 20px;
       }
     }
@@ -97,9 +98,9 @@ main {
     visibility: hidden;
     z-index: 21;
     position: fixed;
-    right: 50px;
+    right: calc(50vw - 720px + 25px);
     bottom: 60px;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     border-radius: 12px;
     background-color: $D-smallinteraction;
@@ -128,11 +129,11 @@ h1 {
   margin: 0 0 24px 0;
   padding-top: 24px;
   font-size: 40px;
-  margin-bottom: 24px;
 }
 
 h2 {
   font-size: 30px;
+  margin: 0;
 }
 
 /* seachbar styling */

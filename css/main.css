@@ -21,7 +21,7 @@ body {
 
 nav {
   height: 100%;
-  width: 250px;
+  width: 230px;
   border-left: 2px solid #fff;
   position: fixed;
   /* Stay in place */
@@ -39,15 +39,16 @@ nav {
   }
 }
 
-main {
-  margin-left: 250px;
+#main {
+  min-height: 100vh;
+  margin-left: 230px;
   padding: 0 25px;
   background-color: #fffbf6;
   border-right: 2px solid #f3efe9;
   position: relative;
 }
 @media only screen and (max-width: 900px) {
-  main {
+  #main {
     margin-left: 100px;
   }
 }
@@ -55,12 +56,13 @@ main {
 .buddy-container #buddy {
   z-index: 21;
   position: fixed;
-  right: 50px;
+  right: calc(50vw - 720px + 25px);
   bottom: 20px;
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1440px) {
   .buddy-container #buddy {
     position: fixed;
+    right: 25px;
     bottom: -70px;
   }
 }
@@ -70,11 +72,11 @@ main {
   transform: translateY(100px);
   cursor: pointer;
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1250px) {
   .buddy-container #buddy#buddy:hover {
     transition: all 150ms ease-in-out;
     position: fixed;
-    right: 50px;
+    right: 25px;
     bottom: 20px;
   }
 }
@@ -82,9 +84,9 @@ main {
   visibility: hidden;
   z-index: 21;
   position: fixed;
-  right: 50px;
+  right: calc(50vw - 720px + 25px);
   bottom: 60px;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   border-radius: 12px;
   background-color: #6661a3;
@@ -109,11 +111,11 @@ h1 {
   margin: 0 0 24px 0;
   padding-top: 24px;
   font-size: 40px;
-  margin-bottom: 24px;
 }
 
 h2 {
   font-size: 30px;
+  margin: 0;
 }
 
 /* seachbar styling */

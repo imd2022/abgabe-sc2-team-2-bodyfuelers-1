@@ -21,7 +21,7 @@ body {
 
 nav {
   height: 100%;
-  width: 250px;
+  width: 230px;
   border-left: 2px solid #fff;
   position: fixed;
   /* Stay in place */
@@ -39,15 +39,16 @@ nav {
   }
 }
 
-main {
-  margin-left: 250px;
+#main {
+  min-height: 100vh;
+  margin-left: 230px;
   padding: 0 25px;
   background-color: #fffbf6;
   border-right: 2px solid #f3efe9;
   position: relative;
 }
 @media only screen and (max-width: 900px) {
-  main {
+  #main {
     margin-left: 100px;
   }
 }
@@ -55,12 +56,13 @@ main {
 .buddy-container #buddy {
   z-index: 21;
   position: fixed;
-  right: 50px;
+  right: calc(50vw - 720px + 25px);
   bottom: 20px;
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1440px) {
   .buddy-container #buddy {
     position: fixed;
+    right: 25px;
     bottom: -70px;
   }
 }
@@ -70,11 +72,11 @@ main {
   transform: translateY(100px);
   cursor: pointer;
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1250px) {
   .buddy-container #buddy#buddy:hover {
     transition: all 150ms ease-in-out;
     position: fixed;
-    right: 50px;
+    right: 25px;
     bottom: 20px;
   }
 }
@@ -82,9 +84,9 @@ main {
   visibility: hidden;
   z-index: 21;
   position: fixed;
-  right: 50px;
+  right: calc(50vw - 720px + 25px);
   bottom: 60px;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   border-radius: 12px;
   background-color: #6661a3;
@@ -109,11 +111,11 @@ h1 {
   margin: 0 0 24px 0;
   padding-top: 24px;
   font-size: 40px;
-  margin-bottom: 24px;
 }
 
 h2 {
   font-size: 30px;
+  margin: 0;
 }
 
 /* seachbar styling */
@@ -189,14 +191,14 @@ h2 {
   background-color: #ffdaba;
 }
 
-main {
+#main {
   height: 100vh;
 }
 
 .search-container {
-  max-height: 60vh;
+  height: fit-content;
   max-width: 1190px;
-  margin: 50px 200px 0 0;
+  margin: 50px 200px 50px 0;
   padding: 50px;
   border: 2px solid #cac7c3;
   border-radius: 12px;
@@ -215,24 +217,90 @@ main {
 .search-container #chip-container {
   margin-top: 40px;
 }
-.search-container #chip-container .chip {
+.search-container #chip-container .chip-content-container {
+  background-color: #ffeee0;
+  width: fit-content;
+  border-radius: 12px;
+}
+.search-container #chip-container .chip-content-container .dropdown-content {
+  display: none;
+  margin-bottom: 8px;
+}
+.search-container #chip-container .chip-content-container .dropdown-content .checkbox-container {
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  /*source for styling checkboxes: https://moderncss.dev/pure-css-custom-checkbox-style/*/
+}
+.search-container #chip-container .chip-content-container .dropdown-content .checkbox-container .form-control {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 2em auto;
+  gap: 0.5em;
+  align-items: center;
+  cursor: pointer;
+}
+.search-container #chip-container .chip-content-container .dropdown-content .checkbox-container .form-control input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fffbf6;
+  margin: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #cac7c3;
+  border-radius: 3px;
+  display: grid;
+  place-content: center;
+}
+.search-container #chip-container .chip-content-container .dropdown-content .checkbox-container .form-control input[type=checkbox]:hover {
+  background-color: #ffdaba;
+}
+.search-container #chip-container .chip-content-container .dropdown-content .checkbox-container .form-control input[type=checkbox]::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #ffa647;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+.search-container #chip-container .chip-content-container .dropdown-content .checkbox-container .form-control input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+.search-container #chip-container .chip-content-container .dropdown-content.show {
+  display: block;
+}
+.search-container #chip-container .chip-content-container .chip {
+  z-index: 10;
   width: fit-content;
   margin-bottom: 8px;
 }
-.search-container #chip-container .chip .chip-content {
+.search-container #chip-container .chip-content-container .chip .chip-content {
   border: none;
   background-color: #ffdaba;
   display: flex;
   padding: 8px 16px;
   align-items: center;
   border-radius: 12px;
+  cursor: pointer;
 }
-.search-container #chip-container .chip .chip-content .filterName {
+.search-container #chip-container .chip-content-container .chip .chip-content .filterName {
   margin: 0 12px 0 0;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 600;
 }
-.search-container #chip-container .chip .chip-content img {
+.search-container #chip-container .chip-content-container .chip .chip-content img {
   rotate: 270deg;
+  height: 15px;
+}
+.search-container #chip-container .chip-content-container .chip .chip-content.active {
+  margin-bottom: 0;
+}
+.search-container #chip-container .chip-content-container .chip .chip-content.active img {
+  rotate: 90deg;
   height: 15px;
 }
 

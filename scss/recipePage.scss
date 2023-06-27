@@ -5,10 +5,10 @@
 }
 
 .headerImage {
-  margin-left: 250px;
+  margin-left: 230px;
   height: 300px;
-  width: calc(100% - 250px);
-  max-width: 1190px;
+  width: calc(100% - 230px);
+  max-width: 1220px;
   object-fit: cover;
 
   @media only screen and (max-width: 900px) {
@@ -173,21 +173,22 @@
 .ingredients-container {
   h2 {
     margin: 0;
-    padding: 32px 0 8px 0;
+    padding: 40px 0 8px 0;
   }
   .person-count-selection {
     display: flex;
     align-items: center;
 
     .person-count {
-      margin: 22px 8px 0 8px;
+      margin: 32px 8px 0 8px;
       background-color: $E-textfields;
       height: 40px;
-      width: 70px;
+      width: 75px;
       border-radius: 8px;
 
       h2 {
         padding: 0;
+        padding-left: 4px;
       }
     }
   }
@@ -195,7 +196,7 @@
   #listed-ingredients {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 920px;
 
     .ingredient {
       height: 120px;
@@ -236,50 +237,55 @@
   }
 }
 
-#listed-utensils {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 900px;
+.utensils-container {
+  margin-top: 40px;
 
-  .utensil {
-    height: 120px;
-    width: 120px;
-    padding: 4px;
-    margin: 0 8px 8px 0;
-    border: 2px solid $C-darkgrey;
-    border-radius: 25px;
-    background-color: $C-lightgrey;
+  #listed-utensils {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    max-width: 920px;
 
-    img {
-      stroke-width: 2px;
-      height: 50px;
-      padding: 8px;
-      margin-bottom: 8px;
-    }
-
-    .utensilContent {
+    .utensil {
+      height: 120px;
+      width: 120px;
+      padding: 4px;
+      margin: 0 8px 8px 0;
+      border: 2px solid $C-darkgrey;
+      border-radius: 25px;
+      background-color: $C-lightgrey;
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      .title {
-        margin-top: 15px;
-        font-size: 14px;
+      img {
+        stroke-width: 2px;
+        height: 50px;
+        padding: 8px;
+        margin-bottom: 8px;
       }
 
-      .amount {
-        font-size: 12px;
-        opacity: 70%;
+      .utensilContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+          margin-top: 15px;
+          font-size: 14px;
+        }
+
+        .amount {
+          font-size: 12px;
+          opacity: 70%;
+        }
       }
     }
   }
 }
 
 .preparation-container {
-  max-width: 900px;
+  margin-top: 40px;
+  max-width: 920px;
   padding-bottom: 40px;
   font-size: 25px;
 
@@ -288,7 +294,7 @@
     margin: 0;
 
     li {
-      margin: 16px 0;
+      margin: 0 0 16px 0;
       line-height: 140%;
     }
   }
@@ -302,7 +308,7 @@
     background-color: $E-textfields;
     padding: 30px 40px;
     border-radius: 12px;
-    max-width: 900px;
+    max-width: 920px;
 
     .rating-stars {
       display: inline-block;

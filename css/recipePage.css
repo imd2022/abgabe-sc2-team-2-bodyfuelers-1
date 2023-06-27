@@ -21,7 +21,7 @@ body {
 
 nav {
   height: 100%;
-  width: 250px;
+  width: 230px;
   border-left: 2px solid #fff;
   position: fixed;
   /* Stay in place */
@@ -39,15 +39,16 @@ nav {
   }
 }
 
-main {
-  margin-left: 250px;
+#main {
+  min-height: 100vh;
+  margin-left: 230px;
   padding: 0 25px;
   background-color: #fffbf6;
   border-right: 2px solid #f3efe9;
   position: relative;
 }
 @media only screen and (max-width: 900px) {
-  main {
+  #main {
     margin-left: 100px;
   }
 }
@@ -55,12 +56,13 @@ main {
 .buddy-container #buddy {
   z-index: 21;
   position: fixed;
-  right: 50px;
+  right: calc(50vw - 720px + 25px);
   bottom: 20px;
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1440px) {
   .buddy-container #buddy {
     position: fixed;
+    right: 25px;
     bottom: -70px;
   }
 }
@@ -70,11 +72,11 @@ main {
   transform: translateY(100px);
   cursor: pointer;
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1250px) {
   .buddy-container #buddy#buddy:hover {
     transition: all 150ms ease-in-out;
     position: fixed;
-    right: 50px;
+    right: 25px;
     bottom: 20px;
   }
 }
@@ -82,9 +84,9 @@ main {
   visibility: hidden;
   z-index: 21;
   position: fixed;
-  right: 50px;
+  right: calc(50vw - 720px + 25px);
   bottom: 60px;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   border-radius: 12px;
   background-color: #6661a3;
@@ -109,11 +111,11 @@ h1 {
   margin: 0 0 24px 0;
   padding-top: 24px;
   font-size: 40px;
-  margin-bottom: 24px;
 }
 
 h2 {
   font-size: 30px;
+  margin: 0;
 }
 
 /* seachbar styling */
@@ -194,10 +196,10 @@ h2 {
 }
 
 .headerImage {
-  margin-left: 250px;
+  margin-left: 230px;
   height: 300px;
-  width: calc(100% - 250px);
-  max-width: 1190px;
+  width: calc(100% - 230px);
+  max-width: 1220px;
   object-fit: cover;
 }
 @media only screen and (max-width: 900px) {
@@ -347,26 +349,27 @@ h2 {
 
 .ingredients-container h2 {
   margin: 0;
-  padding: 32px 0 8px 0;
+  padding: 40px 0 8px 0;
 }
 .ingredients-container .person-count-selection {
   display: flex;
   align-items: center;
 }
 .ingredients-container .person-count-selection .person-count {
-  margin: 22px 8px 0 8px;
+  margin: 32px 8px 0 8px;
   background-color: #f4f3f3;
   height: 40px;
-  width: 70px;
+  width: 75px;
   border-radius: 8px;
 }
 .ingredients-container .person-count-selection .person-count h2 {
   padding: 0;
+  padding-left: 4px;
 }
 .ingredients-container #listed-ingredients {
   display: flex;
   flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 920px;
 }
 .ingredients-container #listed-ingredients .ingredient {
   height: 120px;
@@ -401,12 +404,15 @@ h2 {
   opacity: 70%;
 }
 
-#listed-utensils {
+.utensils-container {
+  margin-top: 40px;
+}
+.utensils-container #listed-utensils {
   display: flex;
   flex-wrap: wrap;
-  max-width: 900px;
+  max-width: 920px;
 }
-#listed-utensils .utensil {
+.utensils-container #listed-utensils .utensil {
   height: 120px;
   width: 120px;
   padding: 4px;
@@ -418,28 +424,29 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-#listed-utensils .utensil img {
+.utensils-container #listed-utensils .utensil img {
   stroke-width: 2px;
   height: 50px;
   padding: 8px;
   margin-bottom: 8px;
 }
-#listed-utensils .utensil .utensilContent {
+.utensils-container #listed-utensils .utensil .utensilContent {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#listed-utensils .utensil .utensilContent .title {
+.utensils-container #listed-utensils .utensil .utensilContent .title {
   margin-top: 15px;
   font-size: 14px;
 }
-#listed-utensils .utensil .utensilContent .amount {
+.utensils-container #listed-utensils .utensil .utensilContent .amount {
   font-size: 12px;
   opacity: 70%;
 }
 
 .preparation-container {
-  max-width: 900px;
+  margin-top: 40px;
+  max-width: 920px;
   padding-bottom: 40px;
   font-size: 25px;
 }
@@ -448,7 +455,7 @@ h2 {
   margin: 0;
 }
 .preparation-container .preparation-list li {
-  margin: 16px 0;
+  margin: 0 0 16px 0;
   line-height: 140%;
 }
 
@@ -460,7 +467,7 @@ h2 {
   background-color: #f4f3f3;
   padding: 30px 40px;
   border-radius: 12px;
-  max-width: 900px;
+  max-width: 920px;
 }
 .rating-container .rating-box .rating-stars {
   display: inline-block;
