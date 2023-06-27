@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding</title>
+    <link rel="stylesheet" href="/css/onboardingPages.css" />
+  </head>
+  <body>
+    <div class="onboarding-container">
+      <div class="progress-stars">
+        <img
+          src="icons/org/org-progress-star-filled.svg"
+          alt="progress star"
+          class="star-filled"
+        />
+        <img
+          src="icons/org/org-progress-star-filled.svg"
+          alt="progress star"
+          class="star-filled"
+        />
+        <img
+          src="icons/org/org-progress-star-not-filled.svg"
+          alt="progress star"
+          class="star-filled"
+        />
+        <img
+          src="icons/org/org-progress-star-not-filled.svg"
+          alt="progress star"
+          class="star-filled"
+        />
+      </div>
+      <div class="contents">
+        <h1 class="onboarding-title">Allergien?</h1>
+        <div class="explanation screen-two">
+          <p>
+            Wenn du an einer Allergie leidest, <strong>wähle</strong> sie aus
+            der folgenden Tabelle aus. Steht deine Allergie nicht in der Liste?
+            Mach dir keine Sorgen, <strong>füge</strong> sie einfach
+            <strong>hinzu</strong>, indem du auf den Plus-Button am Ende der
+            Liste klickst.
+          </p>
+        </div>
+        <ul class="choices">
+          <li>
+            <input type="checkbox" id="milk" name="choice" />
+            <label for="milk">Laktose</label>
+          </li>
+          <li>
+            <input type="checkbox" id="nuts" name="choice" />
+            <label for="nuts">Nüsse</label>
+          </li>
+          <li>
+            <input type="checkbox" id="eggs" name="choice" />
+            <label for="eggs">Eier</label>
+          </li>
+          <li>
+            <input type="checkbox" id="gluten" name="choice" />
+            <label for="gluten">Gluten</label>
+          </li>
+          <li>
+            <input type="checkbox" id="fructose" name="choice" />
+            <label for="fructose">Fruktose</label>
+          </li>
+          <li>
+            <input type="checkbox" id="fish" name="choice" />
+            <label for="fish">Fisch</label>
+          </li>
+          <li>
+            <input type="checkbox" id="mushrooms" name="choice" />
+            <label for="mushrooms">Pilze</label>
+          </li>
+          <li>
+            <input type="checkbox" id="soy" name="choice" />
+            <label for="soy">Soja</label>
+          </li>
+          <li>
+            <input type="checkbox" id="plus" name="choice" disabled="" />
+            <label for="plus"
+              ><svg
+                width="26"
+                height="25"
+                viewBox="0 0 26 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 12.5H12.8224ZM23.6447 12.5H12.8224ZM12.8224 12.5V2ZM12.8224 12.5V23Z"
+                  fill="#FFDABA"
+                />
+                <path
+                  d="M2 12.5H12.8224M12.8224 12.5H23.6447M12.8224 12.5V2M12.8224 12.5V23"
+                  stroke="#272626"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </div>
+      <a href="onboarding-third-diet.html" class="onboarding-button">Weiter</a>
+    </div>
+  </body>
+</html>

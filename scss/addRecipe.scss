@@ -1,0 +1,240 @@
+@import "main";
+// nav css
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: $A-background;
+}
+
+nav {
+  a {
+    all: none;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+
+    img {
+      display: inline-block;
+      margin-right: 10px;
+      height: 21px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: block;
+    padding: 6px;
+
+    a {
+      display: block flex;
+      align-items: center;
+    }
+  }
+
+  a:hover,
+  .active {
+    font-weight: 700;
+    padding-bottom: 8px;
+    display: block;
+  }
+
+  a:hover::after,
+  .active::after {
+    content: "";
+    border-bottom: 3px solid;
+    width: 60px;
+    height: 4px;
+    display: block;
+  }
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 100vh;
+  padding: 10px 20px 20px 20px;
+  background: $C-grayblue;
+  font-size: 20x;
+  line-height: 150%;
+  letter-spacing: -0.266px;
+
+  .upper-nav {
+    flex-grow: 1;
+  }
+
+  .buddy-nav-logo {
+    margin-bottom: 20px;
+  }
+
+  .sub-list {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.266px;
+
+    a:hover,
+    .sub-active {
+      font-weight: 700;
+      padding-bottom: 0px;
+    }
+
+    a:hover::after {
+      content: none;
+    }
+  }
+}
+
+//addRecipe css
+.nav-main-container {
+  display: flex;
+}
+
+.add-recipe {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.arrow {
+  margin-bottom: 15px;
+}
+
+.add-description-button {
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 118px;
+  text-decoration: none;
+  background: #6661a3;
+  color: #fffbf6;
+  width: 310px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+
+  :hover {
+    background: #312d5c;
+  }
+}
+
+.add-recipe-contents {
+  display: flex;
+  max-width: 900px;
+  margin-bottom: 30px;
+  align-items: top;
+}
+
+.recipe-input {
+  margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    display: inline-block;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    width: 542px;
+    border-radius: 12px;
+    background: #f4f3f3;
+    padding: 10px 10px 10px 20px;
+    color: rgba(39, 38, 38, 0.5);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.513px;
+  }
+}
+
+.meal-prep {
+  min-height: 100px;
+}
+
+.add-elements {
+  min-width: 500px;
+
+  .plus {
+    display: inline-block;
+    padding: 30px 40px 25px 40px;
+    margin-bottom: 10px;
+    border: 2px solid #cac7c3;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  :first-child {
+    margin-top: 0;
+  }
+}
+
+// radiobuttons into buttons for multiple choice source:
+// https://stackoverflow.com/questions/16242980/making-radio-buttons-look-like-buttons-instead
+
+.choice {
+  input {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(39, 38, 38, 0.75);
+    border: 2px solid #cac7c3;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+
+.choices {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  li {
+    text-align: center;
+    float: left;
+    margin: 5px;
+    width: 173px;
+    height: 47px;
+    position: relative;
+  }
+
+  label,
+  input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  input[type="checkbox"] {
+    opacity: 0.01;
+    z-index: 100;
+  }
+
+  label {
+    padding: 6px;
+    cursor: pointer;
+    z-index: 90;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgba(39, 38, 38, 0.75);
+    border: 2px solid #cac7c3;
+    border-radius: 15px;
+  }
+
+  :last-child {
+    padding-top: 6px;
+  }
+}
