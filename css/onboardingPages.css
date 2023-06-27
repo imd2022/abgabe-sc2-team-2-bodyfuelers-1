@@ -9,12 +9,180 @@
   color: #272626;
 }
 
+body {
+  margin: 0;
+  background: #fffbf6;
+}
+
+.wholeContent {
+  max-width: 1440px;
+  margin: auto;
+}
+
+nav {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 100vh;
+  padding: 10px 20px 20px 20px;
+  background: #e7ebf3;
+  font-size: 20x;
+  line-height: 150%;
+  letter-spacing: -0.266px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+nav a {
+  all: none;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+nav a img {
+  display: inline-block;
+  margin-right: 10px;
+  height: 21px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: block;
+  padding: 6px;
+}
+nav li a {
+  display: block flex;
+  align-items: center;
+}
+nav a:hover,
+nav .active {
+  font-weight: 700;
+  padding-bottom: 8px;
+  display: block;
+}
+nav a:hover::after,
+nav .active::after {
+  content: "";
+  border-bottom: 3px solid;
+  width: 60px;
+  height: 4px;
+  display: block;
+}
+nav .upper-nav {
+  flex-grow: 1;
+}
+nav .buddy-nav-logo {
+  margin-bottom: 20px;
+}
+nav .sub-list {
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.266px;
+}
+nav .sub-list a:hover,
+nav .sub-list .sub-active {
+  font-weight: 700;
+  padding-bottom: 0px;
+}
+nav .sub-list a:hover::after {
+  content: none;
+}
+
+/*
+nav {
+  height: 100%;
+  width: 230px;
+  border-left: 2px solid #fff;
+  position: fixed; // Stay in place 
+  z-index: 1; // Stay on top 
+  top: 0; // Stay at the top 
+  background-color: $C-grayblue; // Black
+  overflow-x: hidden;
+
+  @media only screen and (max-width: 900px) {
+    width: 100px;
+  }
+}*/
+#main {
+  min-height: 100vh;
+  margin-left: 230px;
+  padding: 0 25px;
+  background-color: #fffbf6;
+  border-right: 2px solid #f3efe9;
+  position: relative;
+  /*
+  @media only screen and (max-width: 945px) {
+    margin-left: 100px;
+  }*/
+}
+
+.buddy-container #buddy {
+  z-index: 21;
+  position: fixed;
+  right: calc(50vw - 720px + 25px);
+  bottom: 20px;
+}
+@media only screen and (max-width: 1440px) {
+  .buddy-container #buddy {
+    position: fixed;
+    right: 25px;
+    bottom: -70px;
+  }
+}
+.buddy-container #buddy#buddy:hover {
+  transition: all 150ms;
+  transition-timing-function: cubic-bezier(0.87, -0.78, 0.12, 1.48);
+  transform: translateY(100px);
+  cursor: pointer;
+}
+@media only screen and (max-width: 1250px) {
+  .buddy-container #buddy#buddy:hover {
+    transition: all 150ms ease-in-out;
+    position: fixed;
+    right: 25px;
+    bottom: 20px;
+  }
+}
+.buddy-container #buddysMessage {
+  visibility: hidden;
+  z-index: 21;
+  position: fixed;
+  right: calc(50vw - 720px + 25px);
+  bottom: 60px;
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  background-color: #6661a3;
+  padding: 0 16px;
+}
+.buddy-container #buddysMessage .messagetext {
+  color: #fffbf6;
+}
+.buddy-container #buddysMessage#buddysMessage::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 45px;
+  width: 0;
+  border-top: 20px solid #6661a3;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
 /* font-sizes */
 h1 {
   margin: 0 0 24px 0;
   padding-top: 24px;
   font-size: 40px;
-  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0;
 }
 
 /* seachbar styling */
@@ -28,6 +196,7 @@ h1 {
   border-radius: 28px;
   margin: 0;
   background-color: #f4f3f3;
+  transition: all 500ms cubic-bezier(0, 0, 0.58, 1);
 }
 .searchbar input[type=search] {
   border: none;
@@ -58,15 +227,15 @@ h1 {
   border-radius: inherit;
   background: transparent url(../icons/org/org-search.svg) no-repeat center;
   cursor: pointer;
+  transition: all 500ms cubic-bezier(0, 0, 0.58, 1);
 }
 .searchbar button[type=submit]:hover {
   border-radius: 26px;
-  background-color: #e7e5ff;
+  background-color: #ffdaba;
 }
-
-.searchbar:hover {
+.searchbar.searchbar:hover {
   content: "";
-  background-color: #f2f1ff;
+  background-color: #e7ebf3;
 }
 
 /* icon button styling */
@@ -83,10 +252,10 @@ h1 {
   border: none;
   outline: none;
   cursor: pointer;
+  transition: all 500ms cubic-bezier(0, 0, 0.58, 1);
 }
-
-.iconbutton:hover {
-  background-color: #e7e5ff;
+.iconbutton.iconbutton:hover {
+  background-color: #ffdaba;
 }
 
 body {

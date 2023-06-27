@@ -20,25 +20,93 @@ body {
 }
 
 nav {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 100vh;
+  padding: 10px 20px 20px 20px;
+  background: #e7ebf3;
+  font-size: 20x;
+  line-height: 150%;
+  letter-spacing: -0.266px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+}
+nav a {
+  all: none;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+nav a img {
+  display: inline-block;
+  margin-right: 10px;
+  height: 21px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: block;
+  padding: 6px;
+}
+nav li a {
+  display: block flex;
+  align-items: center;
+}
+nav a:hover,
+nav .active {
+  font-weight: 700;
+  padding-bottom: 8px;
+  display: block;
+}
+nav a:hover::after,
+nav .active::after {
+  content: "";
+  border-bottom: 3px solid;
+  width: 60px;
+  height: 4px;
+  display: block;
+}
+nav .upper-nav {
+  flex-grow: 1;
+}
+nav .buddy-nav-logo {
+  margin-bottom: 20px;
+}
+nav .sub-list {
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.266px;
+}
+nav .sub-list a:hover,
+nav .sub-list .sub-active {
+  font-weight: 700;
+  padding-bottom: 0px;
+}
+nav .sub-list a:hover::after {
+  content: none;
+}
+
+/*
+nav {
   height: 100%;
   width: 230px;
   border-left: 2px solid #fff;
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  /* Stay at the top */
-  background-color: #e7ebf3;
-  /* Black*/
+  position: fixed; // Stay in place 
+  z-index: 1; // Stay on top 
+  top: 0; // Stay at the top 
+  background-color: $C-grayblue; // Black
   overflow-x: hidden;
-}
-@media only screen and (max-width: 900px) {
-  nav {
+
+  @media only screen and (max-width: 900px) {
     width: 100px;
   }
-}
-
+}*/
 #main {
   min-height: 100vh;
   margin-left: 230px;
@@ -46,11 +114,10 @@ nav {
   background-color: #fffbf6;
   border-right: 2px solid #f3efe9;
   position: relative;
-}
-@media only screen and (max-width: 900px) {
-  #main {
+  /*
+  @media only screen and (max-width: 945px) {
     margin-left: 100px;
-  }
+  }*/
 }
 
 .buddy-container #buddy {
