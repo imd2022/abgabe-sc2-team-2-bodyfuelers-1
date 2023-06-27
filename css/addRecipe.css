@@ -334,10 +334,6 @@ nav .sub-list a:hover::after {
   content: none;
 }
 
-.nav-main-container {
-  display: flex;
-}
-
 .add-recipe {
   padding-left: 25px;
   padding-right: 25px;
