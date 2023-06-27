@@ -107,8 +107,12 @@
   align-items: start;
 }
 
+#savedRecipes {
+  display: none;
+}
+
 #ownRecipes {
-  display: grid;
+  display: none;
   grid-template-columns: auto 1fr auto;
   align-items: start;
 }
@@ -206,7 +210,6 @@
       &.card-item:hover {
         transition: all 375ms ease-in-out;
         background-color: $C-lightgrey;
-        transform: scale(1.02);
         cursor: pointer;
       }
     }

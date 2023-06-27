@@ -355,8 +355,12 @@ h2 {
   align-items: start;
 }
 
+#savedRecipes {
+  display: none;
+}
+
 #ownRecipes {
-  display: grid;
+  display: none;
   grid-template-columns: auto 1fr auto;
   align-items: start;
 }
@@ -447,7 +451,6 @@ h2 {
 .recipes-overview-container .recipes-categories .card-item.card-item:hover {
   transition: all 375ms ease-in-out;
   background-color: #f3efe9;
-  transform: scale(1.02);
   cursor: pointer;
 }
 
