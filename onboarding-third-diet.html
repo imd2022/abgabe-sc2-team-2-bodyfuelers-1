@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding</title>
+    <link rel="stylesheet" href="/css/onboardingPages.css" />
+  </head>
+  <body>
+    <div class="onboarding-container">
+      <div class="progress-stars">
+        <img
+          src="icons/org/org-progress-star-filled.svg"
+          alt="progress star"
+          class="star-filled"
+        />
+        <img
+          src="icons/org/org-progress-star-filled.svg"
+          alt="progress star"
+          class="star-filled"
+        />
+        <img
+          src="icons/org/org-progress-star-filled.svg"
+          alt="progress star"
+          class="star-filled"
+        />
+        <img
+          src="icons/org/org-progress-star-not-filled.svg"
+          alt="progress star"
+          class="star-filled"
+        />
+      </div>
+      <div class="contents">
+        <h1 class="onboarding-title">Diät & Favoriten</h1>
+        <div class="explanation screen-three">
+          <p>Bist du auf einer <strong>speziellen Diät</strong>?</p>
+        </div>
+        <ul class="choices">
+          <li>
+            <input type="checkbox" id="keto" name="choice" />
+            <label for="keto">keto</label>
+          </li>
+          <li>
+            <input type="checkbox" id="vegan" name="choice" />
+            <label for="vegan">vegan</label>
+          </li>
+          <li>
+            <input type="checkbox" id="medit" name="choice" />
+            <label for="medit">mittelmeer</label>
+          </li>
+          <li>
+            <input type="checkbox" id="paleo" name="choice" />
+            <label for="paleo">paleo</label>
+          </li>
+          <li>
+            <input type="checkbox" id="veg" name="choice" />
+            <label for="veg">vegetarisch</label>
+          </li>
+          <li>
+            <input type="checkbox" id="plus" name="choice" disabled="" />
+            <label for="plus"
+              ><svg
+                width="26"
+                height="25"
+                viewBox="0 0 26 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 12.5H12.8224ZM23.6447 12.5H12.8224ZM12.8224 12.5V2ZM12.8224 12.5V23Z"
+                  fill="#FFDABA"
+                />
+                <path
+                  d="M2 12.5H12.8224M12.8224 12.5H23.6447M12.8224 12.5V2M12.8224 12.5V23"
+                  stroke="#272626"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </label>
+          </li>
+        </ul>
+        <div class="explanation screen-three">
+          <p>Wähle <strong>deine Favoriten</strong> aus:</p>
+        </div>
+        <div class="favourites">
+          <div class="left-arrow">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.5 1L1 11.5L11.5 22"
+                stroke="#272626"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <ul class="choices favourites-contents">
+            <li>
+              <input type="checkbox" id="mangos" name="choice" />
+              <label for="mangos"
+                ><img src="img/mangos.jpg" alt="mangos" /> Mangos</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="cheese" name="choice" />
+              <label for="cheese"
+                ><img src="img/cheese.jpg" alt="cheese" /> Käse</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="pasta" name="choice" />
+              <label for="pasta"
+                ><img src="img/pasta.jpg" alt="pasta" /> Pasta</label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="plus" name="choice" disabled="" />
+              <label for="plus" class="plus-label"
+                ><svg
+                  width="26"
+                  height="25"
+                  viewBox="0 0 26 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 12.5H12.8224ZM23.6447 12.5H12.8224ZM12.8224 12.5V2ZM12.8224 12.5V23Z"
+                    fill="#FFDABA"
+                  />
+                  <path
+                    d="M2 12.5H12.8224M12.8224 12.5H23.6447M12.8224 12.5V2M12.8224 12.5V23"
+                    stroke="#272626"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </label>
+            </li>
+          </ul>
+          <div class="right-arrow">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.5 1L1 11.5L11.5 22"
+                stroke="#272626"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <a href="onboarding-fourth-budget.html" class="onboarding-button"
+        >Weiter</a
+      >
+    </div>
+  </body>
+</html>
