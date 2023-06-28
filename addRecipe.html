@@ -12,11 +12,11 @@
       <nav></nav>
       <main class="add-recipe" id="main">
         <h1>Mein Rezept</h1>
-        <img
-          src="icons/org/org-arrow-with-line.svg"
-          alt="arrow"
-          class="arrow"
-        />
+        <div class="space-around-button">
+          <button onclick="backToSearchPage()" class="iconbutton back-button">
+            <img src="./icons/org/org-arrow-with-line.svg" alt="back button" />
+          </button>
+        </div>
         <div class="add-recipe-contents">
           <div class="recipe-input">
             <input type="text" placeholder="Name" />
@@ -109,9 +109,15 @@
             </span>
           </div>
         </div>
-        <a href="" class="add-description-button">Einreichen</a>
+        <a
+          href=""
+          onclick="alert('This button is currently under development.')"
+          class="add-description-button"
+          >Einreichen</a
+        >
       </main>
     </div>
+    <script src="/js/recipePage.js"></script>
     <script src="/js/nav.js"></script>
   </body>
 </html>
