@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/recipePage.css" />
+    <title>ausgewähltes Rezept</title>
+  </head>
+  <body>
+    <div class="wholeContent">
+      <nav></nav>
+      <header>
+        <img class="headerImage" src="" alt="Rezept Bild" />
+      </header>
+      <main id="main">
+        <div class="buddy-container">
+          <img
+            onmouseover="buddysMessage('buddysMessage')"
+            id="buddy"
+            src="./icons/our-buddy.svg"
+            alt="Buddy"
+          />
+          <div id="buddysMessage">
+            <p class="messagetext">
+              Speichere dir das Rezept oder plane es sogar schon direkt ein. Es
+              passt auf jeden Fall noch in deinen Plan. Vielleicht für Mittwoch
+              Abend?
+            </p>
+          </div>
+        </div>
+
+        <div class="sticky">
+          <div class="lines">
+            <button onclick="backToSearchPage()" class="iconbutton back-button">
+              <img
+                src="./icons/org/org-arrow-with-line.svg"
+                alt="back button"
+              />
+            </button>
+            <div class="dropdownSave">
+              <button
+                onclick="saveRecipe()"
+                id="saveButton"
+                class="special-iconbutton"
+              >
+                <img src="./icons/org/org-save.svg" alt="save button" />
+              </button>
+              <div id="saveDropdown" class="dropdown-content">
+                <div class="dropdown-header">speichern unter</div>
+                <a href="#">alle Rezepte</a>
+                <hr />
+                <a href="#">demnächst kochen</a>
+              </div>
+            </div>
+          </div>
+          <div class="lines">
+            <h1 class="recipeName"></h1>
+            <button class="iconbutton plan">
+              <img
+                onclick="alert('This button is currently under development.')"
+                src="./icons/nav/nav-plan-recipes.svg"
+                alt="save button"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="information">
+          <div class="stars-container">
+            <div class="rating-stars">
+              <img
+                src="./icons/org/org-star-rating-filled.svg"
+                alt="star filled"
+              />
+              <img
+                src="./icons/org/org-star-rating-filled.svg"
+                alt="star filled"
+              />
+              <img
+                src="./icons/org/org-star-rating-filled.svg"
+                alt="star filled"
+              />
+              <img
+                src="./icons/org/org-star-rating-filled.svg"
+                alt="star filled"
+              />
+              <img
+                src="./icons/org/org-star-rating-not-filled.svg"
+                alt="star filled"
+              />
+            </div>
+            <div class="rating-amount">
+              <p>(<a href="#rating-header">205</a>)</p>
+            </div>
+          </div>
+          <div class="chipinline">
+            <div id="difficulty" class="chip">Schwierigkeitsgrad</div>
+            <div id="time" class="chip">Dauer</div>
+            <div id="healthIndicator" class="chip">Gesundheitsgrad</div>
+            <div id="price" class="chip">Kosten</div>
+          </div>
+        </div>
+
+        <div class="ingredients-container">
+          <div class="person-count-selection">
+            <h2>Zutaten für</h2>
+            <div class="person-count"><h2>- 2 +</h2></div>
+            <h2>Personen</h2>
+          </div>
+
+          <div id="listed-ingredients">
+            <!--<div class="ingredient">
+            <img
+              src="./icons/hand drawn/hd-butter.svg"
+              alt="Butter Icon"
+              class="foodImage"
+            />
+            <div class="ingredientContent">
+              <div class="title">Butter</div>
+              <div class="amount">0.5 EL</div>
+            </div>
+          </div>-->
+          </div>
+        </div>
+
+        <div class="utensils-container">
+          <h2>benötigte Utensilien</h2>
+          <div id="listed-utensils"></div>
+        </div>
+
+        <div class="preparation-container">
+          <h2>Zubereitung</h2>
+          <ol class="preparation-list">
+            <li>Butter mit Zitronenabrieb erhitzen und kurz köcheln lassen.</li>
+            <li>Basilikum fein hacken.</li>
+            <li>Sahne und Basilikum zur Butter hinzugeben.</li>
+            <li>Geriebenen Parmesan hinzugeben.</li>
+            <li>Kurz köcheln lassen und mit Salz und Pfeffer abschmecken.</li>
+            <li>Tagliatelle nach Packungsanleitung kochen.</li>
+            <li>Tagliatelle abgießen und mit der Sauce vermischen.</li>
+            <li>Auf niedriger Stufe kocheln lassen.</li>
+            <li>Pinienkerne in der Pfanne rösten.</li>
+            <li>
+              Tagliatelle mit Pinienkernen und etwas Parmesanabrieb servieren.
+            </li>
+          </ol>
+        </div>
+
+        <div class="rating-container">
+          <h2 id="rating-header">Bewertungen</h2>
+          <div class="ratings">
+            <div class="rating-box">
+              <div class="rating-stars">
+                <img
+                  src="./icons/org/org-star-rating-filled.svg"
+                  alt="star filled"
+                />
+                <img
+                  src="./icons/org/org-star-rating-filled.svg"
+                  alt="star filled"
+                />
+                <img
+                  src="./icons/org/org-star-rating-filled.svg"
+                  alt="star filled"
+                />
+                <img
+                  src="./icons/org/org-star-rating-filled.svg"
+                  alt="star filled"
+                />
+                <img
+                  src="./icons/org/org-star-rating-filled.svg"
+                  alt="star filled"
+                />
+              </div>
+              <div class="rating-date">Bewertung vom 31.05.2023</div>
+              <h3 class="rating-header">Super gut!</h3>
+              <div class="rating-content">
+                Das Rezept ist mega! Die Zeitangaben stimmen und es ist super
+                leicht zu kochen. Dafür schmeckt es hervorragend. Würde nur
+                persönlich etwas mehr würzen.
+              </div>
+              <div class="like-comment">
+                <button
+                  onclick="toggleLike(event)"
+                  class="like-button"
+                ></button>
+
+                <button
+                  onclick="alert('This button is currently under development.')"
+                  class="iconbutton comment-button"
+                >
+                  <img src="./icons/org/org-comment.svg" alt="comment" />
+                </button>
+              </div>
+            </div>
+
+            <div class="rating-box">
+              <div class="rating-stars">
+                <img
+                  src="./icons/org/org-star-rating-filled.svg"
+                  alt="star filled"
+                />
+                <img
+                  src="./icons/org/org-star-rating-filled.svg"
+                  alt="star filled"
+                />
+                <img
+                  src="./icons/org/org-star-rating-filled.svg"
+                  alt="star filled"
+                />
+                <img
+                  src="./icons/org/org-star-rating-not-filled.svg"
+                  alt="star filled"
+                />
+                <img
+                  src="./icons/org/org-star-rating-not-filled.svg"
+                  alt="star filled"
+                />
+              </div>
+              <div class="rating-date">Bewertung vom 25.05.2023</div>
+              <h3 class="rating-header">Ist okay!</h3>
+              <div class="rating-content">
+                Das Rezept ist gut! Mir fejlt bisschen die Würze. Hätte es gerne
+                mit mehr Geschmack. Aber jetzt weiß ich es entweder für nächstes
+                Mal oder ich nehme ein anderes Rezept und propiere es da aus.
+                Mega gut war es, dass es sich echt einfach kochen ließ. Bin
+                nämlich kochfaul haha.
+              </div>
+              <div class="like-comment">
+                <button
+                  onclick="toggleLike(event)"
+                  class="like-button"
+                ></button>
+
+                <button
+                  onclick="alert('This button is currently under development.')"
+                  class="iconbutton comment-button"
+                >
+                  <img src="./icons/org/org-comment.svg" alt="comment" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/js/nav.js"></script>
+    <script src="./js/recipePage.js"></script>
+  </body>
+</html>

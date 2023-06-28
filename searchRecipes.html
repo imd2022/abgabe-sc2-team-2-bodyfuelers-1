@@ -8,130 +8,188 @@
   </head>
 
   <body>
-    <nav>Hallo, ich bin der Placeholder für Darias NavBar</nav>
-    <main>
-      <div class="buddy-container">
-        <img
-          onmouseover="buddysMessage('buddysMessage')"
-          id="buddy"
-          src="./icons/our-buddy.svg"
-          alt="Buddy"
-        />
-        <div id="buddysMessage">
-          <p class="messagetext">
-            Ich empfehle dir für nächste Woche die Tagliatelle mit
-            Zitronen-Basilikum-Sauce einzuplanen. Das Rezept hat super
-            Bewertungen!
-          </p>
+    <div class="wholeContent">
+      <nav></nav>
+      <main id="main">
+        <div class="buddy-container">
+          <img
+            onmouseover="buddysMessage('buddysMessage')"
+            id="buddy"
+            src="./icons/our-buddy.svg"
+            alt="Buddy"
+          />
+          <div id="buddysMessage">
+            <p class="messagetext">
+              Ich empfehle dir für nächste Woche die Tagliatelle mit
+              Zitronen-Basilikum-Sauce einzuplanen. Das Rezept hat super
+              Bewertungen!
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="sticky">
-        <h1 id="newRecipesHeadline" class="tabcontent">
-          Lasse dich von tollen neuen Rezepten inspirieren!
-        </h1>
-        <h1 id="savedRecipesHeadline" class="tabcontent" style="display: none">
-          Hier findest du all deine gespeicherten Rezepte!
-        </h1>
-        <h1 id="ownRecipesHeadline" class="tabcontent" style="display: none">
-          Make it healthier!
-        </h1>
-
-        <div class="tab">
-          <button
-            class="tablinks active"
-            onclick="tabElement(event, 'newRecipes')"
+        <div class="sticky">
+          <h1 id="newRecipesHeadline" class="tabcontent">
+            Lasse dich von tollen neuen Rezepten inspirieren!
+          </h1>
+          <h1
+            id="savedRecipesHeadline"
+            class="tabcontent"
+            style="display: none"
           >
-            neue Rezepte
-            <div id="newRecipe"></div>
-          </button>
-          <button class="tablinks" onclick="tabElement(event, 'savedRecipes')">
-            gespeicherte Rezepte
-            <div id="savedRecipe"></div>
-          </button>
-          <button class="tablinks" onclick="tabElement(event, 'ownRecipes')">
-            eigene Rezepte
-            <div id="ownRecipe"></div>
-          </button>
-        </div>
+            Hier findest du all deine gespeicherten Rezepte!
+          </h1>
+          <h1 id="ownRecipesHeadline" class="tabcontent" style="display: none">
+            Mache deine eigenen Rezepte gesünder!
+          </h1>
 
-        <div class="search">
-          <div class="searchandfilter">
-            <form onsubmit="handleSearchSubmit(event)" class="searchbar">
-              <input type="search" placeholder="z.B. Salat mit Tomaten" />
-              <button type="submit"></button>
-            </form>
+          <div class="tab">
             <button
-              onclick="window.location.href='searchingPage.html?searchTerm=';"
-              class="iconbutton"
+              class="tablinks active"
+              onclick="tabElement(event, 'newRecipes')"
             >
-              <img src="./icons/org/org-search-filters.svg" alt="filter" />
+              neue Rezepte
+              <div id="newRecipe"></div>
+            </button>
+            <button
+              class="tablinks"
+              onclick="tabElement(event, 'savedRecipes')"
+            >
+              gespeicherte Rezepte
+              <div id="savedRecipe"></div>
+            </button>
+            <button class="tablinks" onclick="tabElement(event, 'ownRecipes')">
+              eigene Rezepte
+              <div id="ownRecipe"></div>
             </button>
           </div>
 
-          <div class="chipinline">
-            <div class="chip">
-              glutenfrei
-              <span
-                class="closebutton"
-                onclick="this.parentElement.style.display='none'"
-                ><img src="/icons/org/org-close.svg" alt="closeButton" />
-              </span>
+          <div class="search">
+            <div class="searchandfilter">
+              <form onsubmit="handleSearchSubmit(event)" class="searchbar">
+                <input type="search" placeholder="z.B. Salat mit Tomaten" />
+                <button type="submit"></button>
+              </form>
+              <button
+                onclick="window.location.href='searchingPage.html?searchTerm=';"
+                class="iconbutton"
+              >
+                <img src="./icons/org/org-search-filters.svg" alt="filter" />
+              </button>
             </div>
 
-            <div class="chip">
-              Mittagessen
-              <span
-                class="closebutton"
-                onclick="this.parentElement.style.display='none'"
-                ><img src="/icons/org/org-close.svg" alt="closeButton" />
-              </span>
-            </div>
+            <div class="chipinline">
+              <div class="chip">
+                glutenfrei
+                <span
+                  class="closebutton"
+                  onclick="this.parentElement.style.display='none'"
+                  ><img src="/icons/org/org-close.svg" alt="closeButton" />
+                </span>
+              </div>
 
-            <div class="chip">
-              10-16min
-              <span
-                class="closebutton"
-                onclick="this.parentElement.style.display='none'"
-                ><img src="/icons/org/org-close.svg" alt="closeButton" />
-              </span>
+              <div class="chip">
+                Mittagessen
+                <span
+                  class="closebutton"
+                  onclick="this.parentElement.style.display='none'"
+                  ><img src="/icons/org/org-close.svg" alt="closeButton" />
+                </span>
+              </div>
+
+              <div class="chip">
+                10-16min
+                <span
+                  class="closebutton"
+                  onclick="this.parentElement.style.display='none'"
+                  ><img src="/icons/org/org-close.svg" alt="closeButton" />
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div id="newRecipes" class="tabcontent container-wraper">
-        <button class="arrow-Button iconbutton">
-          <img src="/icons/org/org-arrow-without-line.svg" alt="arrowLeft" />
-        </button>
+        <div id="newRecipes" class="tabcontent container-wraper">
+          <button
+            onclick="alert('This button is currently under development.')"
+            class="arrow-Button iconbutton"
+          >
+            <img src="/icons/org/org-arrow-without-line.svg" alt="arrowLeft" />
+          </button>
 
-        <div class="recipes-overview-container">
-          <div id="recipeOfTheWeek" class="recipes-categories">
-            <h2>Rezept der Woche</h2>
+          <div class="recipes-overview-container">
+            <div id="recipeOfTheWeek" class="recipes-categories">
+              <h3>Rezept der Woche</h3>
+            </div>
+
+            <div id="mainCourses" class="recipes-categories">
+              <h3>Hauptspeisen</h3>
+            </div>
+
+            <div id="desserts" class="recipes-categories">
+              <h3>Desserts</h3>
+            </div>
           </div>
 
-          <div id="mainCourses" class="recipes-categories">
-            <h2>Hauptspeisen</h2>
-          </div>
-
-          <div id="desserts" class="recipes-categories">
-            <h2>Desserts</h2>
-          </div>
+          <button
+            onclick="alert('This button is currently under development.')"
+            class="arrow-Button iconbutton"
+          >
+            <img
+              class="rotate"
+              src="/icons/org/org-arrow-without-line.svg"
+              alt="arrowLeft"
+            />
+          </button>
         </div>
 
-        <button class="arrow-Button iconbutton">
-          <img
-            class="rotate"
-            src="/icons/org/org-arrow-without-line.svg"
-            alt="arrowLeft"
-          />
-        </button>
-      </div>
+        <div id="savedRecipes" class="tabcontent">
+          Hier wird in Kürze Content stehen.
+        </div>
 
-      <div id="savedRecipes" class="tabcontent"></div>
+        <div id="ownRecipes" class="tabcontent container-wraper">
+          <button
+            onclick="alert('This button is currently under development.')"
+            class="arrow-Button iconbutton"
+          >
+            <img src="/icons/org/org-arrow-without-line.svg" alt="arrowLeft" />
+          </button>
 
-      <div id="ownRecipes" class="tabcontent"></div>
-    </main>
+          <div class="recipes-overview-container">
+            <div id="mainCourses2" class="recipes-categories">
+              <h3>Hauptspeisen</h3>
+              <button onclick="goToAddRecipePage(event)" class="addingRecipe">
+                <img src="icons/org/org-plus.svg" alt="plus icon" />
+              </button>
+            </div>
 
+            <div id="desserts2" class="recipes-categories">
+              <h3>Desserts</h3>
+              <button onclick="goToAddRecipePage(event)" class="addingRecipe">
+                <img src="icons/org/org-plus.svg" alt="plus icon" />
+              </button>
+            </div>
+
+            <div id="snacks" class="recipes-categories">
+              <h3>Snacks</h3>
+              <button onclick="goToAddRecipePage(event)" class="addingRecipe">
+                <img src="icons/org/org-plus.svg" alt="plus icon" />
+              </button>
+            </div>
+          </div>
+
+          <button
+            onclick="alert('This button is currently under development.')"
+            class="arrow-Button iconbutton"
+          >
+            <img
+              class="rotate"
+              src="/icons/org/org-arrow-without-line.svg"
+              alt="arrowLeft"
+            />
+          </button>
+        </div>
+      </main>
+    </div>
+    <script src="/js/nav.js"></script>
     <script src="./js/searchRecipes.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 {
   "recipesOfTheWeek": [
     {
-      "id": 0,
+      "id": "Tagliatelle",
       "title": "Tagliatelle mit Zitronen-Basilikum-Sauce",
       "mealType": "Hauptmahlzeit",
       "difficulty": "einfach",
@@ -11,7 +11,7 @@
       "image": "./imagesRecipes/zitronen_basilikum_pasta-petit-appetit.jpg"
     },
     {
-      "id": 1,
+      "id": "KichererbsenOmlette",
       "title": "Kichererbsen-Omlette",
       "mealType": "Frühstück",
       "difficulty": "einfach",
@@ -21,7 +21,7 @@
       "image": "./imagesRecipes/kichererbsen-omlette-Fooby.jpg"
     },
     {
-      "id": 2,
+      "id": "Kabeljau",
       "title": "Gedünsteter Kabeljau auf Tomaten",
       "mealType": "Hauptmahlzeit",
       "difficulty": "einfach",
@@ -33,7 +33,7 @@
   ],
   "mainCourses": [
     {
-      "id": 0,
+      "id": "KartoffelKarottenPfanne",
       "title": "Kartoffel-Karotten-Pfanne",
       "mealType": "Hauptmahlzeit",
       "difficulty": "mittel",
@@ -43,7 +43,7 @@
       "image": "./imagesRecipes/kartoffel-karotten-pfanne-LIDLkochen.jpg"
     },
     {
-      "id": 1,
+      "id": "Entenbrust",
       "title": "Gebratene Entenbrust",
       "mealType": "Hauptmahlzeit",
       "difficulty": "einfach",
@@ -53,7 +53,7 @@
       "image": "./imagesRecipes/gebratene-entenbrust-GuteKuecheAT.jpg"
     },
     {
-      "id": 2,
+      "id": "NasiGoreng",
       "title": "Nasi Goreng",
       "mealType": "Hauptmahlzeit",
       "difficulty": "einfach",
@@ -65,7 +65,7 @@
   ],
   "desserts": [
     {
-      "id": 0,
+      "id": "WassermelonenPizza",
       "title": "Wassermelonen-Pizza",
       "mealType": "Dessert",
       "difficulty": "einfach",
@@ -75,7 +75,7 @@
       "image": "./imagesRecipes/Wassermelonen-Pizza-springlane.jpg"
     },
     {
-      "id": 1,
+      "id": "PeanutButterCups",
       "title": "Vegane Peanut Butter Cups",
       "mealType": "Dessert",
       "difficulty": "einfach",
@@ -85,7 +85,7 @@
       "image": "./imagesRecipes/Vegane-Peanut-Butter-Cups-Iss-Happy.jpg"
     },
     {
-      "id": 2,
+      "id": "BeerenQuarkCreme",
       "title": "Vegane Beeren-Quark-Creme",
       "mealType": "Dessert",
       "difficulty": "einfach",
