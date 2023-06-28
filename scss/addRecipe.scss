@@ -103,7 +103,7 @@ nav {
   padding: 20px 40px;
   border-radius: 118px;
   text-decoration: none;
-  background: #6661a3;
+  background: $D-CTAnormal;
   color: #fffbf6;
   width: 310px;
   font-style: normal;
@@ -113,8 +113,8 @@ nav {
   text-align: center;
   transition: all 200ms ease-in-out;
 
-  :hover {
-    background: #312d5c;
+  &:hover {
+    background: $D-CTAdominat;
   }
 }
 

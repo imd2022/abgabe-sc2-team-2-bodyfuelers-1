@@ -295,7 +295,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   padding-top: 2px;
-  max-width: calc(1400px - 250px);
+  max-width: 1150px;
 }
 .sticky .lines .iconbutton {
   margin: 0;
