@@ -4,14 +4,15 @@
 
 <h2>Einleitung</h2>
 
-<p>Bei diesem Projekt handelt es sich um das Semesterprojekt des Teams BodyFuelers, 
-welches aus Theresa Hußke und Daria Savchenko bestand. In diesem Proejkt wurde ein Teil des 
-vorher konzipierten Designs in die realität umgesetzt. Dabei wurden die Technologien
-HTML, SCSS und JavaScript verwendet.</p>
+<p>Bei diesem Projekt handelt es sich um das Semesterprojekt 2023 des Teams BodyFuelers, 
+welches aus Theresa Hußke und Daria Savchenko bestand. Beide sind Studierende des Studiengangs Interactive Media Design.
+In diesem Projekt wurde ein Teil des vorher konzipierten Designs in die Realität umgesetzt. Dabei wurden die Technologien
+HTML, SCSS und JavaScript verwendet.
+</p>
 
 <h2>Anmerkungen zum Projekt</h2>
 
-<p>Aus Mangel an Erfahrung in der Programmierung konnten in den zwei WOchen nicht alle Elemente 
+<p>Aus Mangel an Erfahrung in der Programmierung im zweiten Semester konnten in den zwei Wochen nicht alle Elemente 
 so umgesetzt werden, wie erhofft. 
 <ol>
 <li>Die Buttons und Eingabefelder des Onboarding werden nicht im Hintergrund gespeichert.</li>
