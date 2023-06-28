@@ -87,8 +87,8 @@ body {
   padding: 20px 40px;
   border-radius: 118px;
   text-decoration: none;
-  background: #6661a3;
-  color: #fffbf6;
+  background: $D-CTAnormal;
+  color: $A-background;
   width: 310px;
   font-style: normal;
   font-weight: 700;
@@ -96,8 +96,8 @@ body {
   line-height: 150%;
   transition: all 200ms ease-in-out;
 
-  :hover {
-    background-color: #312d5c;
+  &.onboarding-button:hover {
+    background-color: $D-CTAdominat;
   }
 }
 
@@ -172,7 +172,7 @@ textarea {
 
   input[type="checkbox"]:checked + label,
   .Checked + label {
-    background: #e7e5ff;
+    background: $C-orangedark;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     color: #272626;
     border: none;

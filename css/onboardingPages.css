@@ -340,7 +340,7 @@ body {
   padding: 20px 40px;
   border-radius: 118px;
   text-decoration: none;
-  background: #6661a3;
+  background: #ffa647;
   color: #fffbf6;
   width: 310px;
   font-style: normal;
@@ -349,8 +349,8 @@ body {
   line-height: 150%;
   transition: all 200ms ease-in-out;
 }
-.onboarding-button :hover {
-  background-color: #312d5c;
+.onboarding-button.onboarding-button:hover {
+  background-color: #ff7a00;
 }
 
 textarea {
@@ -416,7 +416,7 @@ textarea {
 }
 .choices input[type=checkbox]:checked + label,
 .choices .Checked + label {
-  background: #e7e5ff;
+  background: #ffdaba;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
   color: #272626;
   border: none;
