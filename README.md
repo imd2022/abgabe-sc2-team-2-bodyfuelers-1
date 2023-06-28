@@ -17,8 +17,8 @@ so umgesetzt werden, wie erhofft.
 <ol>
 <li>Die Buttons und Eingabefelder des Onboarding werden nicht im Hintergrund gespeichert.</li>
 <li>Der Slider beim Onboarding ist ohne Funktion.</li>
-<li>Die Buttons mit einer einfachen Umrahmung und einem "+" in der Mitte können nicht gedrückt werden.</li>
+<li>Die Buttons mit einer einfachen Umrahmung und einem "+" in der Mitte können nicht gedrückt werden, es sei denn, es kann drüber gehovert werden.</li>
 <li>Die Verknüpfung der Navigation mit der Tab-Leiste unter "Rezept suchen" konnte nicht verknüpft werden.</li>
-<li>Die Korrekte Animation des "Buddy" auf der unteren rechten Seite ist nicht korrekt und enthält Fehler.</li>
+<li>Die Animation des auf der unteren rechten Seite platzierten "Buddy"  ist nicht korrekt und enthält Fehler.</li>
 <li>Alle weiteren Button, die ohne Funktion sind, haben ein Alert erhalten, sodass klar ist, dass diese noch entwickelt werden müssten.</li>
 </ol>
