@@ -41,7 +41,7 @@ function buddysMessage(buddysMessage) {
 }
 
 function backToSearchPage() {
-  window.location.href = "/searchRecipes.html";
+  window.location.href = "searchRecipes.html";
 }
 
 /* getting ID of before clicked recipe */
@@ -84,7 +84,7 @@ function createUtensilsCard(element) {
   return utensilCard;
 }
 
-fetch("./recipeContent.json").then(function (response) {
+fetch("recipeContent.json").then(function (response) {
   response.json().then(function (data) {
     const recipe = data[currentId];
     document.querySelector(".headerImage").src = recipe.image;

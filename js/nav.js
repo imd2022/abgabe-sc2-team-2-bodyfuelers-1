@@ -3,8 +3,8 @@ let nav = document.querySelector("nav");
 let activePath = document.location.pathname;
 
 let activeRecipeSearch;
-let activeNewRecipes = activePath === "/searchRecipes.html" ? "sub-active" : "";
-let activeOwnRecipes = activePath === "/addRecipe.html" ? "sub-active" : "";
+let activeNewRecipes = activePath === "searchRecipes.html" ? "sub-active" : "";
+let activeOwnRecipes = activePath === "addRecipe.html" ? "sub-active" : "";
 
 nav.innerHTML = `
       <img
@@ -24,19 +24,19 @@ nav.innerHTML = `
           </a>
         </li>
         <li>
-          <a href="/searchRecipes.html" class="active">
+          <a href="searchRecipes.html" class="active">
             <img src="icons/nav/nav-search-recipes.svg" alt="" />
             <span>Rezepte suchen</span>
           </a>
           <ul class="sub-list">
             <li>
-              <a href="/searchRecipes.html" class="${activeNewRecipes}">neue Rezepte</a>
+              <a href="searchRecipes.html" class="${activeNewRecipes}">neue Rezepte</a>
             </li>
             <li>
               <a href="">gespeicherte Rezepte</a>
             </li>
             <li>
-              <a href="/addRecipe.html" class="${activeOwnRecipes}">eigene Rezepte</a>
+              <a href="addRecipe.html" class="${activeOwnRecipes}">eigene Rezepte</a>
             </li>
           </ul>
         </li>

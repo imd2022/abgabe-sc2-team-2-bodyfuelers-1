@@ -64,7 +64,7 @@ function createRecipeCard(element) {
 /* getting content from json-file */
 
 // fetch = asynchron request / when finished then the function will be executed
-fetch("./recipes.json").then(function (response) {
+fetch("recipes.json").then(function (response) {
   // the json function converts the data from response
   response.json().then(function (data) {
     //for each element of the array with property recipesOfTheWeek the anonymous function is executed
@@ -90,7 +90,7 @@ function handleSearchSubmit(event) {
   event.preventDefault(); //all settings are reset
   const searchTerm = event.target[0].value; //this form has two targets (input + button), we want to get the value from the input (target[0])
   console.log(searchTerm);
-  window.location = "/searchingPage.html?searchTerm=" + searchTerm; //when triggering the event, the window location changes to the new Page with the value of the form
+  window.location = "searchingPage.html?searchTerm=" + searchTerm; //when triggering the event, the window location changes to the new Page with the value of the form
 }
 
 /* getting a message from buddy by hovering over buddy */
@@ -107,10 +107,10 @@ function buddysMessage(buddysMessage) {
 /* change page when clicking on card items */
 function goToRecipePage(event) {
   const currentId = event.target.closest(".card-item").id; //closest function heading toward the document root which is the CSS selector
-  window.location.href = "/recipePage.html?ID=" + currentId;
+  window.location.href = "recipePage.html?ID=" + currentId;
 }
 
 /* change Page when clicking on "+"-Button at own recipes tab */
 function goToAddRecipePage(event) {
-  window.location.href = "/addRecipe.html";
+  window.location.href = "addRecipe.html";
 }

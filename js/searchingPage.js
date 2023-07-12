@@ -16,7 +16,7 @@ const searchInput = searchbar[0];
 searchInput.value = searchTerm;
 
 function backToSearchPage() {
-  window.location.href = "/searchRecipes.html";
+  window.location.href = "searchRecipes.html";
 }
 
 /*array for the chips with id, chipName and dropdownContent*/
