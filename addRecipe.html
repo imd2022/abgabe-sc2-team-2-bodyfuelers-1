@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezept hinzufügen</title>
+    <link rel="stylesheet" href="css/addRecipe.css" />
+  </head>
+
+  <body>
+    <div class="wholeContent">
+      <nav></nav>
+      <main class="add-recipe" id="main">
+        <h1>Mein Rezept</h1>
+        <div class="space-around-button">
+          <button onclick="backToSearchPage()" class="iconbutton back-button">
+            <img src="icons/org/org-arrow-with-line.svg" alt="back button" />
+          </button>
+        </div>
+        <div class="add-recipe-contents">
+          <div class="recipe-input">
+            <input type="text" placeholder="Name" />
+            <ul class="choices">
+              <li>
+                <input type="checkbox" id="main" name="choice" />
+                <label for="main">Hauptmahlzeit</label>
+              </li>
+              <li>
+                <input type="checkbox" id="dessert" name="choice" />
+                <label for="dessert">Dessert</label>
+              </li>
+              <li>
+                <input type="checkbox" id="snack" name="choice" />
+                <label for="snack">Snack</label>
+              </li>
+              <li></li>
+              <li>
+                <input type="checkbox" id="plus" name="choice" disabled="" />
+                <label for="plus"
+                  ><svg
+                    width="26"
+                    height="25"
+                    viewBox="0 0 26 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 12.5H12.8224ZM23.6447 12.5H12.8224ZM12.8224 12.5V2ZM12.8224 12.5V23Z"
+                      fill="#FFDABA"
+                    />
+                    <path
+                      d="M2 12.5H12.8224M12.8224 12.5H23.6447M12.8224 12.5V2M12.8224 12.5V23"
+                      stroke="#272626"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+              </li>
+            </ul>
+            <h2>Zubereitung</h2>
+            <input type="text" placeholder="1." class="meal-prep" />
+          </div>
+          <div class="add-elements">
+            <h2>Zutaten für - 2 + Personen</h2>
+            <span class="plus"
+              ><svg
+                width="26"
+                height="25"
+                viewBox="0 0 26 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 12.5H12.8224ZM23.6447 12.5H12.8224ZM12.8224 12.5V2ZM12.8224 12.5V23Z"
+                  fill="#FFDABA"
+                />
+                <path
+                  d="M2 12.5H12.8224M12.8224 12.5H23.6447M12.8224 12.5V2M12.8224 12.5V23"
+                  stroke="#272626"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <h2>benötigte Utensilien</h2>
+            <span class="plus"
+              ><svg
+                width="26"
+                height="25"
+                viewBox="0 0 26 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 12.5H12.8224ZM23.6447 12.5H12.8224ZM12.8224 12.5V2ZM12.8224 12.5V23Z"
+                  fill="#FFDABA"
+                />
+                <path
+                  d="M2 12.5H12.8224M12.8224 12.5H23.6447M12.8224 12.5V2M12.8224 12.5V23"
+                  stroke="#272626"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+        <a
+          href=""
+          onclick="alert('This button is currently under development.')"
+          class="add-description-button"
+          >Einreichen</a
+        >
+      </main>
+    </div>
+    <script src="js/recipePage.js"></script>
+    <script src="js/nav.js"></script>
+  </body>
+</html>

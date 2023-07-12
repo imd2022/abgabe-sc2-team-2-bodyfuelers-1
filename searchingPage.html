@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/searchingPage.css" />
+    <title>Rezept Suche</title>
+  </head>
+  <body>
+    <div class="wholeContent">
+      <nav></nav>
+      <main id="main">
+        <div class="buddy-container">
+          <img
+            onmouseover="buddysMessage('buddysMessage')"
+            id="buddy"
+            src="icons/our-buddy.svg"
+            alt="Buddy"
+          />
+          <div id="buddysMessage">
+            <p class="messagetext">
+              Ich empfehle dir für nächste Woche die Tagliatelle mit
+              Zitronen-Basilikum-Sauce einzuplanen. Das Rezept hat super
+              Bewertungen!
+            </p>
+          </div>
+        </div>
+
+        <h1>Verfeinere deine Suche nach neuen Rezepten!</h1>
+
+        <div class="search-container">
+          <div class="search-header">
+            <form class="searchbar">
+              <input type="search" placeholder="z.B. Salat mit Tomaten" />
+              <button type="submit"></button>
+            </form>
+            <button
+              onclick="backToSearchPage()"
+              class="iconbutton close-button"
+            >
+              <img src="icons/org/org-close.svg" alt="close button" />
+            </button>
+          </div>
+
+          <div id="chip-container"></div>
+        </div>
+      </main>
+      <script src="js/nav.js"></script>
+      <script src="js/searchingPage.js"></script>
+    </div>
+  </body>
+</html>

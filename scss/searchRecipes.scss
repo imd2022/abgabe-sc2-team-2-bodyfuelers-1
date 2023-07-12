@@ -1,0 +1,217 @@
+@import "main";
+
+* {
+  box-sizing: border-box;
+}
+
+.tablinks {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-bottom: 32px;
+
+  &.active {
+    font-weight: bold;
+    position: relative;
+
+    #newRecipe {
+      background-color: $B-textdark;
+      height: 5px;
+      width: 70px;
+      border-radius: 5px;
+    }
+
+    #savedRecipe {
+      margin: auto;
+      width: 50%;
+      background-color: $B-textdark;
+      height: 5px;
+      width: 70px;
+      border-radius: 5px;
+    }
+
+    #ownRecipe {
+      position: absolute;
+      right: 6px;
+      background-color: $B-textdark;
+      height: 5px;
+      width: 70px;
+      border-radius: 5px;
+    }
+  }
+
+  &.tablinks:hover {
+    transition: all 150ms ease-in-out;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.searchandfilter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.chipinline {
+  display: flex;
+  align-items: center;
+
+  .chip {
+    display: flex;
+    align-items: center;
+    margin: 0 8px 16px 0;
+    padding: 0 16px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: $C-orangedark;
+
+    img {
+      padding-left: 8px;
+      color: $B-textdark;
+      height: 14px;
+      width: auto;
+    }
+
+    .closebutton {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &.chip:hover {
+      transition: all 300ms ease-in-out;
+      background-color: $C-orangelight;
+    }
+  }
+}
+
+.container-wraper {
+  max-width: 940px;
+}
+
+.arrow-Button {
+  position: sticky;
+  top: 300px;
+
+  .rotate {
+    rotate: 180deg;
+  }
+}
+
+#newRecipes {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+}
+
+#savedRecipes {
+  display: none;
+}
+
+#ownRecipes {
+  display: none;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 300px;
+  background-color: $A-background;
+  z-index: 10;
+
+  @media only screen and (max-width: 1230px) {
+    height: 350px;
+  }
+}
+
+.recipes-overview-container {
+  display: flex;
+  gap: 20px;
+
+  .recipes-categories {
+    flex-grow: 1;
+
+    h3 {
+      background-color: $A-background;
+      text-align: center;
+      position: sticky;
+      top: 300px;
+      margin-top: 0;
+      padding: 8px;
+      z-index: 10;
+
+      @media only screen and (max-width: 1230px) {
+        top: 350px;
+      }
+    }
+
+    .addingRecipe {
+      border: 2px solid $B-textdark;
+      border-radius: 12px;
+      width: 100%;
+      height: 48px;
+      background-color: $A-background;
+      transition: all 300ms cubic-bezier(0, 0, 0.58, 1);
+
+      &.addingRecipe:hover {
+        background-color: $C-orangedark;
+        cursor: pointer;
+        transform: scale(1.02);
+      }
+    }
+
+    .card-item {
+      box-shadow: inset 0 0 5px $C-lightgrey;
+      border-radius: 12px;
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      min-height: 250px;
+
+      img {
+        border-radius: 12px 12px 0 0;
+        width: 100%;
+        aspect-ratio: 16/5;
+        object-fit: cover;
+      }
+
+      .card-content {
+        margin: 0 15px;
+
+        .card-title {
+          min-height: 44px;
+          font-size: 16px;
+        }
+
+        .card-mealType {
+          font-size: 14px;
+          opacity: 70%;
+        }
+
+        .healthIndicator {
+          width: 100%;
+          height: 16px;
+          background-color: $E-neutral;
+          border-radius: 15px;
+          margin-bottom: 12px;
+        }
+
+        .card-tags {
+          font-size: 14px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+
+      &.card-item:hover {
+        transition: all 375ms ease-in-out;
+        background-color: $C-lightgrey;
+        cursor: pointer;
+      }
+    }
+  }
+}

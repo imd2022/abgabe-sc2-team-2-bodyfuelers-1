@@ -1,0 +1,135 @@
+@import "main";
+
+#main {
+  height: 100vh;
+}
+
+.search-container {
+  height: fit-content;
+  max-width: 1190px;
+  margin: 50px 200px 50px 0;
+  padding: 50px;
+  border: 2px solid $C-darkgrey;
+  border-radius: 12px;
+
+  @media only screen and (max-width: 1440px) {
+    max-width: none;
+    margin-right: 0px;
+  }
+  .search-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #chip-container {
+    margin-top: 40px;
+
+    .chip-content-container {
+      background-color: $C-orangelight;
+      width: fit-content;
+      border-radius: 12px;
+
+      .dropdown-content {
+        display: none;
+        margin-bottom: 8px;
+
+        .checkbox-container {
+          padding: 8px 16px;
+          display: flex;
+          flex-direction: column;
+
+          /*source for styling checkboxes: https://moderncss.dev/pure-css-custom-checkbox-style/*/
+          .form-control {
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            display: grid;
+            grid-template-columns: 2em auto;
+            gap: 0.5em;
+            align-items: center;
+
+            input[type="checkbox"] {
+              -webkit-appearance: none;
+              appearance: none;
+              background-color: $A-background;
+              margin: 0;
+              height: 20px;
+              width: 20px;
+              border: 2px solid $C-darkgrey;
+              border-radius: 3px;
+              display: grid;
+              place-content: center;
+            }
+
+            input[type="checkbox"]:hover {
+              background-color: $C-orangedark;
+            }
+
+            input[type="checkbox"]::before {
+              content: "";
+              width: 12px;
+              height: 12px;
+              transform: scale(0);
+              transition: 120ms transform ease-in-out;
+              box-shadow: inset 1em 1em $D-CTAnormal;
+              transform-origin: bottom left;
+              clip-path: polygon(
+                14% 44%,
+                0 65%,
+                50% 100%,
+                100% 16%,
+                80% 0%,
+                43% 62%
+              );
+            }
+
+            input[type="checkbox"]:checked::before {
+              transform: scale(1);
+            }
+          }
+        }
+
+        &.show {
+          display: block;
+        }
+      }
+
+      .chip {
+        z-index: 10;
+        width: fit-content;
+        margin-bottom: 8px;
+
+        .chip-content {
+          border: none;
+          background-color: $C-orangedark;
+          display: flex;
+          padding: 8px 16px;
+          align-items: center;
+          border-radius: 12px;
+          cursor: pointer;
+
+          .filterName {
+            margin: 0 12px 0 0;
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          img {
+            rotate: 270deg;
+            height: 15px;
+          }
+
+          &.active {
+            margin-bottom: 0;
+
+            img {
+              rotate: 90deg;
+              height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
