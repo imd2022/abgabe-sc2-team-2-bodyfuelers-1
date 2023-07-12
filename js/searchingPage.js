@@ -113,7 +113,7 @@ function createChips(chip) {
   chipTitle.classList.add("filterName");
   chipContent.appendChild(chipTitle);
   const chipImage = document.createElement("img");
-  chipImage.src = "../icons/org/org-arrow-without-line.svg";
+  chipImage.src = "./icons/org/org-arrow-without-line.svg";
   chipContent.appendChild(chipImage);
 
   //↓ creating "dropdown-content" as child of createdChipContentContainer
